@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Tail_OAV:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Tail_OAV_jar</output-path>
+    <root id="archive" name="Tail_OAV.jar">
+      <element id="module-output" name="Tail_OAV" />
+    </root>
+  </artifact>
+</component>
