@@ -44,16 +44,20 @@ public class Main {
            String line;
            while ((line = reader.readLine()) != null) {
                // System.out.println(line);
-              // for (int i =0; ; i++){
+             // for (int i =0; ; i++){
                    LinkedList <String> List = new LinkedList<>();
                   List.add(line);
+                  //C:\Users\Asus\Desktop\Test.txt
               // System.out.println(List.size());
-                   //System.out.println(List);
+                 //  System.out.println(List);
              //  for(int i = 0; i!=9; i++){
                //    int a = List.size();
                  //  System.out.println(List.get(a - i));
              //  }
               // }
+               //List.toArray();
+
+               System.out.println(List.get(0));
        }
        } catch (IOException e) {
            System.out.println("Что то пошло не так");
