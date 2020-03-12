@@ -11,7 +11,6 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<String> s = new ArrayList<>();
         int row;
-        String [] array;
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите путь к файлу");
         String way = sc.nextLine();
@@ -27,7 +26,6 @@ public class Main {
                 for(int i = 0; i != row; i++){
                     System.out.println(s.get((0) + i));
                 }
-
             }
             else{
                 System.out.println("Последние 10 строк: ");
@@ -37,5 +35,6 @@ public class Main {
             reader.close();
         } catch (IOException e) {
             System.out.println("Ошибка!");
+            System.out.println("Неправильно указан путь к файлу или такого файла не существует!");
         }
     }}
