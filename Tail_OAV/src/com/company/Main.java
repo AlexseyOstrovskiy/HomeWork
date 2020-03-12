@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -42,11 +43,14 @@ public class Main {
                new InputStreamReader(
                        new FileInputStream(way), StandardCharsets.UTF_8))){
            String line;
-           while ((line = reader.readLine()) != null) {
+          // for (int i =0; ; i++){
+           while (( line  = reader.readLine()) != null) {
                // System.out.println(line);
              // for (int i =0; ; i++){
-                   LinkedList <String> List = new LinkedList<>();
-                  List.add(line);
+
+                   ArrayList<String> List = new ArrayList<>();
+                List.add(line);
+
                   //C:\Users\Asus\Desktop\Test.txt
               // System.out.println(List.size());
                  //  System.out.println(List);
@@ -57,7 +61,7 @@ public class Main {
               // }
                //List.toArray();
 
-               System.out.println(List.get(0));
+               System.out.println(List.get(2));
        }
        } catch (IOException e) {
            System.out.println("Что то пошло не так");
