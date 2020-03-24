@@ -1,22 +1,27 @@
 package com.company;
 
+import static com.company.OcheredBuyer.bigTurn;
+import static com.company.OcheredBuyer.littleTurn;
+import java.util.ArrayList;
+
 public class Main {
 
+    static ArrayList bigTurn = new ArrayList();
+    static ArrayList littleTurn = new ArrayList();
+    static ArrayList notHappy = new ArrayList(); // список несчасливых покупателей
+    static ArrayList Happy = new ArrayList();
+
     public static void main(String[] args) {
-     /*   //создаём массив из 20 элементов - покупатели внутри магазина
-        int[] myArr = new int[20];
-	for( int i = 0; i < 20 ; i++){
-	    myArr[i] = i + 1;
-    }
-        //System.out.println(myArr[19]);
-        //проверяем количество покупателей внутри магазина и при необходимости добавляем
-        if (myArr.length < 20){
-            for(int i =21; i < 101; i++){
-                myArr[19] = i;
-            }
+        for (int i = 1; i != 101 ; i++) {
+            bigTurn.add(i);
         }
 
-      */
+
+
+       //bigTurn.add(1);
+        System.out.println(bigTurn);
+
+
 
 
     }
