@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="860f06df-df8a-4e71-84d4-78e938afec2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/OcheredBuyer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/THREAD_OstrovskogoAV/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/THREAD_OstrovskogoAV/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Buyer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Seller.java" afterDir="false" />
@@ -39,7 +37,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Intellij - мои программы/untitled6" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -84,26 +82,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="462" y="109" key="FileChooserDialogImpl" timestamp="1584981285095">
+    <state x="462" y="109" key="FileChooserDialogImpl" timestamp="1585141192830">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584981285095" />
-    <state width="1323" height="166" key="GridCell.Tab.0.bottom" timestamp="1585076736188">
+    <state x="462" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585141192830" />
+    <state width="1323" height="269" key="GridCell.Tab.0.bottom" timestamp="1585155421122">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="166" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585076736188" />
-    <state width="1323" height="166" key="GridCell.Tab.0.center" timestamp="1585076736089">
+    <state width="1323" height="269" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585155421122" />
+    <state width="1323" height="269" key="GridCell.Tab.0.center" timestamp="1585155421121">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="166" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585076736089" />
-    <state width="1323" height="166" key="GridCell.Tab.0.left" timestamp="1585076735505">
+    <state width="1323" height="269" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585155421121" />
+    <state width="1323" height="269" key="GridCell.Tab.0.left" timestamp="1585155421121">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="166" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585076735505" />
-    <state width="1323" height="166" key="GridCell.Tab.0.right" timestamp="1585076736090">
+    <state width="1323" height="269" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585155421121" />
+    <state width="1323" height="269" key="GridCell.Tab.0.right" timestamp="1585155421121">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="166" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585076736090" />
+    <state width="1323" height="269" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585155421121" />
     <state x="65" y="0" key="new project wizard" timestamp="1585045044969">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
