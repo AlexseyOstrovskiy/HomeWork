@@ -3,11 +3,10 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Random;
 
+import static com.company.Main.Happy;
+import static com.company.Main.littleTurn;
+
 public class Seller extends Thread {
-    static ArrayList bigTurn = new ArrayList();
-    static ArrayList<Thread> littleTurn = new ArrayList<>();
-    static ArrayList notHappy = new ArrayList(); // список несчасливых покупателей
-    static ArrayList<String> Happy = new ArrayList<>();
 
 
     @Override
@@ -19,7 +18,7 @@ public class Seller extends Thread {
                     Random random = new Random();
                     int rNumber = random.nextInt(20);
                     Seller.sleep(30);
-                    Thread buyerLucky = littleTurn.get(rNumber);
+                    Thread buyerLucky = (Thread) littleTurn.get(rNumber);
                     System.out.println("покупатель номер " + buyerLucky.getName() + " получил свой товар");
                     Happy.add(buyerLucky.getName());
                     buyerLucky.interrupt();

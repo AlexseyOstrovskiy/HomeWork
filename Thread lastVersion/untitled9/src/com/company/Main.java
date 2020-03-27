@@ -3,14 +3,14 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Random;
 
-import static java.lang.Thread.sleep;
 
 public class Main {
 
-    static ArrayList <Thread> bigTurn = new ArrayList();
-    static ArrayList <Thread> littleTurn = new ArrayList();
+    static ArrayList bigTurn = new ArrayList();
+    static ArrayList littleTurn = new ArrayList();
     static ArrayList <String> notHappy = new ArrayList(); // список несчасливых покупателей
-    static ArrayList <String> Happy = new ArrayList();
+    static ArrayList <String> Happy  = new ArrayList();
+
     public static void main(String[] args) {
 
 
@@ -86,10 +86,11 @@ public class Main {
         seller.start();
 
  */
-        for (int i = 0; i < 100 ; i++) {
+      /*  for (int i = 0; i < 100 ; i++) {
             Buyer buyer = new Buyer(i);
             bigTurn.add(buyer);
         }
+        */
 
 
        /* for (int k = 0; k < 20 ; k++) {
@@ -109,12 +110,14 @@ public class Main {
             littleTurn.add(buyer);
             buyer.start();
         }
+        System.out.println("Список несчастливых покупателей = " + notHappy);
 
 
 
 
 
-        Thread seller = new Thread(new Runnable() {
+
+      /*  Thread seller = new Thread(new Runnable() {
             Thread Seller = Thread.currentThread();
             @Override
             public synchronized void run() {
@@ -157,13 +160,15 @@ public class Main {
 
         seller.start();
 
+       */
 
 
 
-        System.out.println("Количество счастливых покупателей  = " + Happy.size());
-        for (int l = 0; l < Happy.size() ; l++) {
-        String happyBuyer = (String) Happy.get(l);
-        System.out.println("Список счастливых покупателей = " + happyBuyer);}
+
+        //System.out.println("Количество счастливых покупателей  = " + Happy.size());
+        //for (int l = 0; l < Happy.size() ; l++) {
+        //String happyBuyer = (String) Happy.get(l);
+        //System.out.println("Список счастливых покупателей = " + happyBuyer);}
 
 
        // System.out.println("Количество несчастливых покупателей  = " + notHappy.size());

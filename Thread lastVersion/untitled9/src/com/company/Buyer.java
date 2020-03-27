@@ -2,14 +2,13 @@ package com.company;
 
 import java.util.ArrayList;
 
+import static com.company.Main.littleTurn;
+import static com.company.Main.notHappy;
 import static java.lang.System.*;
 
 public class Buyer extends Thread {
 
-    static ArrayList bigTurn = new ArrayList();
-    static ArrayList littleTurn = new ArrayList();
-    static ArrayList <String> notHappy = new ArrayList(); // список несчасливых покупателей
-    static ArrayList <String> Happy  = new ArrayList();
+
 
     int nameBuyer;
     Buyer(int nameBuyer){
@@ -29,8 +28,8 @@ public class Buyer extends Thread {
         //for (int i = 0; i < 100; i++) {
           //  String nHbuyer = notHappy.get(i);
             //}
-        System.out.println("Список несчастливых покупателей = " + notHappy);
-        System.out.println("Количество несчастливых покупателей  = " + notHappy.size());
+    // System.out.println("Список несчастливых покупателей = " + notHappy);
+       // System.out.println("Количество несчастливых покупателей  = " + notHappy.size());
     }
 
 
