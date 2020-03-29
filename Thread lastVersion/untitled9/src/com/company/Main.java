@@ -44,8 +44,8 @@ public class Main {
 
 
 
-      //  Seller seller = new Seller();
-       // seller.start();
+        Seller seller = new Seller();
+        seller.start();
 
 
       /*  for (int i = 0; i <20 ; i++) {
@@ -60,14 +60,28 @@ public class Main {
 
         for (int i = 0; i <100 ; i++) {
             Buyer buyer = new Buyer(i);
-        if(littleTurn.size() < 20){
-            littleTurn.add(buyer);
-        }
-        else {
-            buyer.start();
+            bigTurn.add(buyer);}
 
+
+        for (int j = 0; j < 20; j++) {
+            littleTurn.add(bigTurn.get(0));
+            bigTurn.remove(0);
         }
-        }
+
+        while (! bigTurn.isEmpty()){
+        if (littleTurn.size() < 20) {
+            littleTurn.add(bigTurn.get(0));
+            bigTurn.remove(0);
+                } else {
+                    Thread buyerInLittle = new Thread();
+                    for (int j = 0; j < 20; j++) {
+                        buyerInLittle = littleTurn.get(j);
+                        //buyerInLittle.start();
+                    }
+                    buyerInLittle.start();
+                }}
+
+
 
 
 

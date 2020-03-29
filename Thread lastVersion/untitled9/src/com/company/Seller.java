@@ -16,7 +16,7 @@ public class Seller extends Thread {
             for (int j = 0; j < 5; j++) {
                 try {
                     Random random = new Random();
-                    int rNumber = random.nextInt(littleTurn.size());
+                    int rNumber = random.nextInt(20);
                     Seller.sleep(30);
                     Thread buyerLucky = new Thread();
                     buyerLucky = littleTurn.get(rNumber);
