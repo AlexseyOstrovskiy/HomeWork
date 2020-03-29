@@ -3,26 +3,102 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Random;
 
+import static com.company.Buyer.notHappy;
 
 public class Main {
 
-    static ArrayList bigTurn = new ArrayList();
-    static ArrayList littleTurn = new ArrayList();
-    static ArrayList <String> notHappy = new ArrayList(); // список несчасливых покупателей
-    static ArrayList <String> Happy  = new ArrayList();
+    static ArrayList <Thread>bigTurn = new ArrayList();
+    static ArrayList <Thread> littleTurn = new ArrayList();
 
-    public static void main(String[] args) {
+   // static ArrayList <String> notHappy = new ArrayList(); // список несчасливых покупателей
+    //static ArrayList <String> Happy  = new ArrayList();
+    public static void main(String[] args) throws InterruptedException {
 
-
-      /*  for (int i = 21; i < 100 ; i++) {
+       /* for (int i = 0; i < 20 ; i++) {
             Buyer buyer = new Buyer(i);
             bigTurn.add(buyer);
+        }
+
+        */
+
+        /*  // Тест выводит список большой очереди
+        System.out.println("************* 1");
+        Thread buyerTest = new Thread();
+        for (int i = 0; i < 20; i++) {
+            buyerTest = bigTurn.get(i);
+            System.out.println(buyerTest.getName());
+        }
+        System.out.println("************ 2");
+         */
+       /* for (int h = 0; h <5 ; h++) {
+        for (int j = 0; j <5 ; j++) {
+            littleTurn.add(bigTurn.get(0));
+            bigTurn.remove(0);
+            Buyer buyerInLT = new Buyer(j);
+            buyerInLT.start();
+        }
+            System.out.println("Перерыв");}
+*/
+
+
+
+
+
+      //  Seller seller = new Seller();
+       // seller.start();
+
+
+      /*  for (int i = 0; i <20 ; i++) {
+            Buyer buyer = new Buyer(i);
+            littleTurn.add(buyer);
+            buyer.start();
+          //  System.out.println(buyer.getName());
+        }
+
+       */
+
+
+        for (int i = 0; i <100 ; i++) {
+            Buyer buyer = new Buyer(i);
+        if(littleTurn.size() < 20){
+            littleTurn.add(buyer);
+        }
+        else {
+            buyer.start();
+
+        }
         }
 
 
 
 
+
+
+
+
+      /*  for (int j = 0; j <5 ; j++) {
+        Random random = new Random();
+        int rn = random.nextInt(20);
+        Thread luckyBuyer = new Thread();
+        luckyBuyer = littleTurn.get(rn);
+        //System.out.println("Поток " + luckyBuyer.getName() + " остановлен");
+        luckyBuyer.interrupt();}
+
        */
+
+
+
+       /*  // Тест выводит маленькую очередь
+       Thread buyerTest2 = new Thread();
+        for (int i = 0; i < 5; i++) {
+            buyerTest2 = littleTurn.get(i);
+            System.out.println(buyerTest2.getName());
+        }
+        System.out.println("************ 3");
+
+        */
+
+
 
 
 
@@ -81,11 +157,16 @@ public class Main {
             }
         });
 
+*/
 
-        Seller seller =new Seller();
-        seller.start();
+      //  Seller seller =new Seller();
+        //seller.start();
 
- */
+
+
+
+
+
       /*  for (int i = 0; i < 100 ; i++) {
             Buyer buyer = new Buyer(i);
             bigTurn.add(buyer);
@@ -105,12 +186,26 @@ public class Main {
 
 
 
-        for (int k = 0; k < 20 ; k++) {
+     /* for (int k = 0; k < 20 ; k++) {
             Buyer buyer = new Buyer(k);
             littleTurn.add(buyer);
             buyer.start();
         }
-        System.out.println("Список несчастливых покупателей = " + notHappy);
+
+      */
+
+
+
+       /* Thread.sleep(50000);
+        System.out.println(littleTurn.size());
+        for (int i = 0; i < littleTurn.size(); i++) {
+        System.out.println(littleTurn.get(i));}
+
+        */
+       // System.out.println(notHappy);
+
+
+      //System.out.println("Список несчастливых покупателей = " + notHappy);
 
 
 
