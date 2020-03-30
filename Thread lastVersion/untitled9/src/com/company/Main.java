@@ -62,13 +62,16 @@ public class Main {
             Buyer buyer = new Buyer(i);
             bigTurn.add(buyer);}
 
-
+        while (!bigTurn.isEmpty()){
         for (int j = 0; j < 20; j++) {
             littleTurn.add(bigTurn.get(0));
             bigTurn.remove(0);
-        }
+            Thread buyerInLittle = new Thread();
+            buyerInLittle = littleTurn.get(j);
+            buyerInLittle.start();
+        }}
 
-        while (! bigTurn.isEmpty()){
+        /*while (! bigTurn.isEmpty()){
         if (littleTurn.size() < 20) {
             littleTurn.add(bigTurn.get(0));
             bigTurn.remove(0);
@@ -80,6 +83,8 @@ public class Main {
                     }
                     buyerInLittle.start();
                 }}
+
+         */
 
 
 

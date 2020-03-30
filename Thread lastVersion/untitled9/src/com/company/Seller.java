@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 //import static com.company.Main.Happy;
+import static com.company.Main.bigTurn;
 import static com.company.Main.littleTurn;
 
 public class Seller extends Thread {
@@ -24,6 +25,10 @@ public class Seller extends Thread {
                     //Happy.add(buyerLucky.getName());
                     buyerLucky.interrupt();
                     littleTurn.remove(rNumber);
+                    if (!bigTurn.isEmpty()){
+                        littleTurn.add(bigTurn.get(0));
+                        bigTurn.remove(0);
+                    }
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
