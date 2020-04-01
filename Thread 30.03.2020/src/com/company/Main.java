@@ -25,37 +25,43 @@ public class Main {
                      notHappy.add(Buyer.getName());
                     System.out.println(Buyer.getName() + " я недоволен класс Buyer"); // Если ничего не происходит уходит из магазина
                     System.out.println(notHappy.size());
-                    // littleTurn.remove(Buyer);
+                     littleTurn.remove(Buyer);
                     Buyer.interrupt();
+
                 } catch (InterruptedException e) {
                     System.out.println(Buyer.getName() + " Я нашёл всё что нужно. класс Buyer");
                 }
             }}
         }
 
+
+
         Thread BuyerInTurn = new Thread(new Runnable() {
             @Override
             public synchronized void run() {
-                for (int i = 1; i <= 100; ) {
-                    if (littleTurn.size() >= 20){
-                        try {
-                            Thread.sleep(100);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                    else {
+                for (int i = 1; i <= 100;  ) {
+                    if (littleTurn.size() < 20){
                         Buyer buyer = new Buyer(i);
                         littleTurn.add(buyer);
                         buyer.start();
                         i++;
+                    }
+                    else {
+                        try {
+                           Thread.sleep(100);              // попробовать остановить поток через wait
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
             }
         });
 
 
+
         BuyerInTurn.start();
+
+
 
     }
 }
