@@ -40,19 +40,23 @@ public class Main {
             @Override
             public synchronized void run() {
                 for (int i = 1; i <= 100;  ) {
-                    if (littleTurn.size() < 20){
+                    if (littleTurn.size() < 5){
                         Buyer buyer = new Buyer(i);
                         littleTurn.add(buyer);
                         buyer.start();
                         i++;
                     }
-                    else {
-                        try {
+                   else {
+                        while (true){
+                            if(littleTurn.size()<20){
+                            return;
+                        }}
+                     /*   try {
                            Thread.sleep(100);              // попробовать остановить поток через wait
                         } catch (InterruptedException e) {
                             e.printStackTrace();
-                        }
-                    }
+                        }*/
+                   }
                 }
             }
         });
