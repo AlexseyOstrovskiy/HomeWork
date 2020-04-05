@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 //создаём массив и заполняем случайными цифрами
-        int [] arr = new int[20];
+       int [] arr = new int[20];
         Random random =new Random();
         for (int i = 0; i < 20 ; i++) {
             int a = random.nextInt(19);         //19
@@ -20,8 +20,10 @@ public class Main {
 
 
 
+
+
 //ищем минимальное значение
-        int min = 21;
+      int min = 21;
         for (int i = 0; i < arr.length -1 ; ) {
             if (arr[i] < arr[i]+1) {                //почему здесь arr[i]+1!!!!!!!!! смотреть ниже на вторую часть комента
                 if (arr[i] < min) {
@@ -34,6 +36,8 @@ public class Main {
              min = arr[arr.length -1];
          }
         System.out.println("Минимальное число в масиве = " + min);
+
+
 
 
  //Ищем максимальное число
@@ -67,6 +71,18 @@ public class Main {
         }
         System.out.println("Максимальное число в масиве = " + max);
 
+
+
+
+
+
+// Среднее значение
+        int sum = 0;
+        for (int i = 0; i < arr.length  ; i++) {
+             sum =sum + arr[i];
+        }
+        int medium = sum / arr.length;
+        System.out.println("Среднее значение массива = " + medium);
 
     }
 }
