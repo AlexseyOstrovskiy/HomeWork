@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
@@ -20,8 +21,7 @@ public class Main {
 
 
 
-
-
+/*
 //ищем минимальное значение
       int min = 21;
         for (int i = 0; i < arr.length -1 ; ) {
@@ -55,7 +55,7 @@ public class Main {
         System.out.println("TEST " + arr[i+1]);
         i++;}
 
-       */
+
 
         int max = 0;
         for (int i = 0; i < arr.length -1 ; ) {
@@ -83,6 +83,32 @@ public class Main {
         }
         int medium = sum / arr.length;
         System.out.println("Среднее значение массива = " + medium);
+        */
 
+//метод с сортировкой массива
+        System.out.println("************");
+        Arrays.sort(arr);
+      /*
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println( arr[i] );
+        }
+       */
+
+        System.out.println("Минимальная цифра из массива = " + arr[0]);
+        System.out.println("Максимальная цифпа из массива = " + arr[arr.length - 1]);
+        int middle = arr.length % 2;
+        if(middle == 0){
+            int middleN1 = arr.length/2;
+            int middleN2 = middleN1 + 1;
+        System.out.println("Среднее значение массива, так как массив имеет четное количество элементов равное " + arr.length) ;
+            System.out.println("в качестве среднего элемента будут выведены" + middleN1 + " " +  middleN2 + " элементы");
+            System.out.println(middleN1 + " элемент равен = " + arr[middleN1]);
+            System.out.println(middleN2 + " элемент равен = " + arr[middleN2]);
+        }
+        else{
+            int middleN3 = (arr.length/2) +1 ;
+            System.out.println("Среднее значение массива, так как массив имеет нечетное количество элементов равное " + arr.length);
+            System.out.println("В качестве среднего значения будет " + middleN3 + " элемент, равный = " + arr[middleN3] );
+        }
     }
 }
