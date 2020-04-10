@@ -31,7 +31,10 @@ public class Main {
                 System.out.println("Последние 10 строк: ");
                 for(int i =0; i != 10 ; i++){
                     System.out.println(s.get((row-10 ) + i));
-                }}
+                }
+                }
+
+
             reader.close();
         } catch (IOException e) {
             System.out.println("Ошибка!");
