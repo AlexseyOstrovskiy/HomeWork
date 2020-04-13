@@ -61,7 +61,7 @@ public class Main {
         for (int i = 0; i <100 ; i++) {
             Buyer buyer = new Buyer(i);
             bigTurn.add(buyer);}
-
+/*
         while (!bigTurn.isEmpty()){
         for (int j = 0; j < 20; j++) {
             littleTurn.add(bigTurn.get(0));
@@ -69,7 +69,44 @@ public class Main {
             Thread buyerInLittle = new Thread();
             buyerInLittle = littleTurn.get(j);
             buyerInLittle.start();
-        }}
+
+ */
+            boolean exitBigTurn = true;
+            while (exitBigTurn){
+              //  System.out.println("Test1");
+              if (!bigTurn.isEmpty()){
+              //    System.out.println("Test2");
+              if (littleTurn.size() < 20){
+                //  System.out.println("Test3");
+                  for (int j = 0; j < 20; j++) {
+                 //     System.out.println("Test4");
+                      Thread buyerInLittle = new Thread();
+                      buyerInLittle = bigTurn.get(j);
+                      buyerInLittle.start();
+                      bigTurn.remove(j);
+                littleTurn.add(buyerInLittle);
+               // bigTurn.remove(0);
+               // Thread buyerInLittle = new Thread();
+                //buyerInLittle = littleTurn.get(j);
+                //buyerInLittle.start();
+
+
+              }}
+              else {
+                 //System.out.println("Test5");
+                  System.out.println("количество элементов  в маленькой очереди " + littleTurn.size());
+              }}
+              else{
+                 // System.out.println("Test6");
+                  exitBigTurn = false;}
+
+            }
+             // else{
+               //   Thread.sleep(500);
+              //}
+
+        //}
+
 
         /*while (! bigTurn.isEmpty()){
         if (littleTurn.size() < 20) {
