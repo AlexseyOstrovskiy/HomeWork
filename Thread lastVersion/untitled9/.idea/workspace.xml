@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44dee572-e02a-43b9-bc27-eaaeb146041d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../TODOlist_Ostrovskogo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TODOlist_Ostrovskogo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Thread 30.03.2020/out/production/Thread 30.03.2020/com/company/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thread 30.03.2020/out/production/Thread 30.03.2020/com/company/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Thread 30.03.2020/out/production/Thread 30.03.2020/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thread 30.03.2020/out/production/Thread 30.03.2020/com/company/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thread New/Thread New.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thread New/src/com/company/Buyer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Thread New/src/com/company/Seller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,29 +85,29 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1585230719227" />
-    <state x="462" y="106" key="FileChooserDialogImpl" timestamp="1585583797096">
+    <state x="462" y="106" key="FileChooserDialogImpl" timestamp="1586967595655">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585583797096" />
-    <state width="1323" height="129" key="GridCell.Tab.0.bottom" timestamp="1586803480414">
+    <state x="462" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586967595655" />
+    <state width="1323" height="168" key="GridCell.Tab.0.bottom" timestamp="1586967487805">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586803480414" />
-    <state width="1323" height="129" key="GridCell.Tab.0.center" timestamp="1586803480414">
+    <state width="1323" height="168" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586967487805" />
+    <state width="1323" height="168" key="GridCell.Tab.0.center" timestamp="1586967487804">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586803480414" />
-    <state width="1323" height="129" key="GridCell.Tab.0.left" timestamp="1586803480414">
+    <state width="1323" height="168" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586967487804" />
+    <state width="1323" height="168" key="GridCell.Tab.0.left" timestamp="1586967487804">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586803480414" />
-    <state width="1323" height="129" key="GridCell.Tab.0.right" timestamp="1586803480414">
+    <state width="1323" height="168" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586967487804" />
+    <state width="1323" height="168" key="GridCell.Tab.0.right" timestamp="1586967487805">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586803480414" />
-    <state x="65" y="0" key="new project wizard" timestamp="1585583799676">
+    <state width="1323" height="168" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586967487805" />
+    <state x="65" y="0" key="new project wizard" timestamp="1586967597960">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1585583799676" />
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1586967597960" />
   </component>
 </project>

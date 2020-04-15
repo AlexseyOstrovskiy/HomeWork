@@ -57,10 +57,13 @@ public class Main {
 
        */
 
-
+/* 15/04/2020
         for (int i = 0; i <100 ; i++) {
             Buyer buyer = new Buyer(i);
             bigTurn.add(buyer);}
+
+ */
+
 /*
         while (!bigTurn.isEmpty()){
         for (int j = 0; j < 20; j++) {
@@ -71,6 +74,7 @@ public class Main {
             buyerInLittle.start();
 
  */
+/*15/04/2020
             boolean exitBigTurn = true;
             while (exitBigTurn){
               //  System.out.println("Test1");
@@ -106,6 +110,8 @@ public class Main {
               //}
 
         //}
+
+ */
 
 
         /*while (! bigTurn.isEmpty()){
