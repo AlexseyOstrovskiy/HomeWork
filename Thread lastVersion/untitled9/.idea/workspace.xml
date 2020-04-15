@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44dee572-e02a-43b9-bc27-eaaeb146041d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Thread New/src/com/company/addBuyerInTurn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Thread New/out/production/Thread New/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thread New/out/production/Thread New/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Thread New/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thread New/src/com/company/Main.java" afterDir="false" />
     </list>

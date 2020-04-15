@@ -8,8 +8,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-
+/*
+1вариан здесь, очередь работает но не сопрягается с продавцом
 
 
 //while (true){                                     // через while цикл не получается
@@ -33,8 +33,16 @@ public class Main {
 
       //  }
 
+
+ */
+
+addBuyerInTurn addBuyerInTurn1 = new addBuyerInTurn();
+addBuyerInTurn1.start();
+/*
         Seller seller = new Seller();
         seller.start();
+
+ */
 
 
 
