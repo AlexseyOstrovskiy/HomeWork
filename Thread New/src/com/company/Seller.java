@@ -11,7 +11,7 @@ public class Seller extends Thread {
     @Override
     public void run() {
         Thread Seller = Thread.currentThread();
-        if (!littleTurn.isEmpty()){
+       // if (!littleTurn.isEmpty()){
             for (int j = 0; j < 5; j++) {
                 try {
                     Random random = new Random();
@@ -38,10 +38,10 @@ public class Seller extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }
-        else{
-            System.out.println("В очереди больше никого нет, наверное можно закрываться!");
-        }
+       // }
+      //  else{
+      //      System.out.println("В очереди больше никого нет, наверное можно закрываться!");
+     //   }
 
     }
 }
