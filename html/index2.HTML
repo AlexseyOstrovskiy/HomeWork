@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <!-- title текст на вкладке в браузере-->
+        <title>2 урок HTML</title>
+        <meta charset="UTF -8">  
+    </head>
+        
+    <body>
+        <!-- элементы формы -->
+        <input 
+        type="text"
+        placeholder="введите что нибудь"
+        value="hello"><!-- type = text - обычное текстовое поле-->
+        <br />
+        <input type="number" /><!-- атрибут number допустим ввод только чисел и того что с ними связано-->
+        <br/>
+        <input type="checkbox"><!--checkbox - элемент флажок-->
+        <br/>
+        <input type="date" />
+        <br/>
+        <input type="email" /> <!--tel, url-->
+        <br/>
+        <input type="password" />
+        <br/>
+        <input type="file" />
+        <br />
+        <input type="button" value="text on button"/>
+        <button> text on button</button>
+        <br />
+        <!-- 
+            Атрибут name задаёт уникальный модификатор элемента
+             в рамках тега form 
+        -->
+        <form action="https://www.google.com" method="POST"> 
+            <input name="key"/>
+            <select name="fruit"> <!-- выпадающий список-->
+                <!--значение атрибута value - должны быть уникальными
+                в рамках тега select-->
+                <option value="banana">Банан </option>
+                <option value="apple">Яблоко</option>
+                <option selected value="tangerine">Мандарин</option>
+            </select>
+            <input type="button" value="очистить" /> 
+            <!-- type = submit - кнопка каоторая провоцирует отправку данных
+            формы на сервер. Будут отправлены только те значения элементов формы,
+        у которых задан не пустой атрибут name-->
+            <input type="submit" value="отправить"/>
+        </form>
+
+        <!--Таблицы в HTML-->
+        <table border="12">
+            <!--thead - заголовок таблицы-->
+            <thead>
+                <tr>
+                   <!--tr - строка таблицы--> 
+                   <th> Имя</th><!--th - столбец(текст выделен жирным)-->
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>    
+            </thead>
+            <!-- tbody - тело таблицы-->
+            <tbody>
+                <tr>
+                    <td> Vasya</td>
+                    <td>vasyia@mail.ru</td>
+                    <td>34</td>
+                </tr>
+
+                <tr>
+                    <td> Kolya</td>
+                    <td>kolya@mail.ru</td>
+                    <td>25</td>
+                </tr>
+
+                <tr>
+                    <td> JD</td>
+                    <td>jd@mail.ru</td>
+                    <td>30</td>
+                </tr>
+
+                <!--объеденение строк-->
+                <tr>
+                    <td rowspan="2">Levon</td>
+                    <td>levon@mail.ru</td>
+                    <td rowspan="2"> 56</td>
+                    <tr>
+                        <td>hello@mail.com</td>
+                    </tr>
+                </tr>
+
+                <!--объединение столбцов-->
+                <tr>
+                    <td>Jane</td>
+                    <td colspan="2">Hello</td>
+                </tr>
+
+            </tbody>
+            <!-- tfoot - нижняя часть таблицы-->
+            <tfoot>
+
+            </tfoot>
+        </table>
+
+        <!-- мнемоники в html-->
+        <p>&gt;</p>
+        <p>&lt;</p>
+        <p>&lt;a&gt; google&lt;/a&gt;</p>
+    </body>
+</html>
