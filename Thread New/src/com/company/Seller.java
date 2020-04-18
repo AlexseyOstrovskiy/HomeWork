@@ -18,7 +18,9 @@ public class Seller extends Thread {
                     littleTurn.remove(rNumber);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
-                }}
+                }
+
+            }
                 System.out.println("Я ухожу на склад, скоро вернусь!");
                 try {
                     Seller.sleep(100);
@@ -27,6 +29,6 @@ public class Seller extends Thread {
                 }
 
         }
-        while (!littleTurn.isEmpty());
+       while (!littleTurn.isEmpty());
     }
 }
