@@ -52,16 +52,16 @@ public class Main {
         for (int i = 0; i < notHappyTurn.size() - 1 ; i++) {
             arrayNotHappyTurn.add(notHappyTurn.get(i).getName());}
 
-        ArrayList arrayLucky = new ArrayList();
+        ArrayList arraylucky = new ArrayList();
         for (int i = 0; i < happyTurn.size() - 1 ; i++) {
-            arrayLucky.add(happyTurn.get(i).getName());}
+            arraylucky.add(happyTurn.get(i).getName());}
 
 
 
         System.out.println("Количество недовольных покупателей :  " + notHappyTurn.size());
         System.out.println("Количество довольных покупателе  : " + happyTurn.size() );
         System.out.println("Список недовольных покупателей : " + arrayNotHappyTurn);
-        System.out.println("Список довольных покупателей : " + arrayLucky);
+        System.out.println("Список довольных покупателей : " + arraylucky);
        // System.out.println("Список недовольных покупателей: " + arrayNotHappyTurn.toArray());
 
 
