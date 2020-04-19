@@ -12,15 +12,8 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
-
-
-
-
         Seller seller = new Seller();
         seller.start();
-
-
-
 
          // Создание очереди Начало
         int j = 0;
@@ -31,7 +24,6 @@ public class Main {
                  littleTurn.add(buyer);
                  buyer.start();
                  i++;
-               //  System.out.println("************" + littleTurn.size());
              }
              else{
                 try {
@@ -43,7 +35,6 @@ public class Main {
                   }
             j++;
                }
-        //Создание очереди Конец
 
         //Вывод итоговых списков
         Thread.sleep(1001);
@@ -56,31 +47,9 @@ public class Main {
         for (int i = 0; i < happyTurn.size() - 1 ; i++) {
             arraylucky.add(happyTurn.get(i).getName());}
 
-
-
         System.out.println("Количество недовольных покупателей :  " + notHappyTurn.size());
         System.out.println("Количество довольных покупателе  : " + happyTurn.size() );
         System.out.println("Список недовольных покупателей : " + arrayNotHappyTurn);
         System.out.println("Список довольных покупателей : " + arraylucky);
-       // System.out.println("Список недовольных покупателей: " + arrayNotHappyTurn.toArray());
-
-
-
-       // System.out.println("Список довольных покупателей " + happyTurn);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
