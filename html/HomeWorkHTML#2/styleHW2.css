@@ -1,0 +1,12 @@
+.card{
+    background: grey;
+}
+.card-body{
+    color: rgb(252, 252, 133);
+}
+.btn {
+    background:yellow;
+    color: green;
+    font-style: oblique;
+    font-weight: 800;
+}
