@@ -1,4 +1,4 @@
-/*https://www.youtube.com/watch?v=ltMSrSis9ww   28/42*/
+/*https://www.youtube.com/watch?v=ltMSrSis9ww   38/42*/
 
 body{
     margin: 0;
@@ -25,6 +25,10 @@ h1,h2,h3,h4,h5,h6{
 
 /*intro*/
 .intro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 100vh;
 background: url(intro.jpg) center
@@ -39,12 +43,28 @@ background-size: cover;
 }
 
 .intro_title{
-    color: rgb(179, 31, 238);
+    color: green;
     font-size: 150px;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center;
     line-height: 1;
+}
+
+.intro_title:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: green;
+    margin: 60px auto 60px;
+}
+
+.intro_suptitle{
+    /*margin-bottom: 20px;*/
+    margin:40px auto 20px ;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    color:green;
 }
 
 /*Header*/
@@ -110,4 +130,26 @@ background-size: cover;
 .nav_link:hover:after{
     display: block;
     
+}
+
+/*btn*/
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+   
+    border: 3px solid #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .8s linear, color 1s linear ;
+}
+
+.btn:hover{
+    background: #fff;
+    color: #333;
 }
