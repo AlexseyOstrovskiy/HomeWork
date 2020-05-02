@@ -40,7 +40,7 @@ public class Main {
             System.out.println("Заданного числа в исходном массиве не найдено!");
         }
 
-        if(n != 1){
+        if(n != -1){
         System.out.println("Что сделать с заданным числом : ");
         System.out.println("1.Удалить ");
         System.out.println("2.Изменить ");
@@ -52,11 +52,24 @@ public class Main {
 
         switch (menu){
             case(1):
+                int q = 0;
                 for (int m = 0; m < myArray.length ; m++) {
-                    int [] myArray2 = new int[myArray.length - 1];
-                    if(myArray[m] != i){
-                       
+                    if(myArray[m] == i){
+                        q++;
                     }
+                }
+                int [] myArray2 = new int[myArray.length - q];
+                for (int m = 0; m < myArray.length ; m++) {
+                    for (int w = 0; w < myArray.length - q ; w++) {
+                        if(myArray[m] != i){
+                            myArray2[w] = myArray[m];
+                        }
+                    }
+                }
+                System.out.println("Массив после удаления заданного числа :");
+                for (int e = 0; e < myArray2.length ; e++) {
+                    System.out.print(myArray2[e] + " ");
+                    System.out.println(" ");
                 }
                 break;
         }
