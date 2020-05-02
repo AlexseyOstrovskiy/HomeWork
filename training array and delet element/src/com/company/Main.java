@@ -59,19 +59,60 @@ public class Main {
                     }
                 }
                 int [] myArray2 = new int[myArray.length - q];
+                int myArrnum =0;
                 for (int m = 0; m < myArray.length ; m++) {
-                    for (int w = 0; w < myArray.length - q ; w++) {
                         if(myArray[m] != i){
-                            myArray2[w] = myArray[m];
-                        }
+                            myArray2[myArrnum] = myArray[m];
+                            myArrnum++;
                     }
                 }
+                System.out.println("Количество элементов в массиве после удаление заданного элемента - " + myArray2.length );
                 System.out.println("Массив после удаления заданного числа :");
                 for (int e = 0; e < myArray2.length ; e++) {
                     System.out.print(myArray2[e] + " ");
-                    System.out.println(" ");
                 }
                 break;
+
+            case (2):
+                System.out.println("Как изменить задданое число");
+                System.out.println("1.Умножить на ЧИСЛО Z.");
+                System.out.println("2.Разделить на ЧИСЛО Z.");
+                System.out.println("3.Суммировать с ЧИСЛОМ Z.");
+                System.out.println("4.Вычесть из заданного числа Число Z.");
+                Scanner sc2 = new Scanner(System.in);
+                int menu2 = sc2.nextInt();
+                System.out.println("Введите ЧИСЛО Z : ");
+                int numZ = sc2.nextInt();
+                switch (menu2){
+                    case(1):
+                        int [] myArray3 = new int[myArray.length];
+                        int myArrnum1 =0;
+                        for (int m = 0; m < myArray.length ; m++) {
+                            if(myArray[m] != i){
+                                myArray3[myArrnum1] = myArray[m];
+                                myArrnum1++;
+                            }
+                            else{
+                                int t = i*numZ;
+                                myArray3[myArrnum1] = t;
+                                myArrnum1++;
+                            }
+                        }
+
+                        System.out.println("Массив после изменения заданного числа :");
+                        for (int e = 0; e < myArray3.length ; e++) {
+                            System.out.print(myArray3[e] + " ");
+                        }
+                        break;
+
+                }
+
+                break;
+
+                case (3):
+                break;
+            default:
+                System.out.println("Некорректный ввод");
         }
 
 
