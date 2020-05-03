@@ -38,6 +38,33 @@ public class Main {
         }
         if(n == -1){
             System.out.println("Заданного числа в исходном массиве не найдено!");
+            System.out.println("Задать число самомтоятельно?");
+            System.out.println("1.Да.");
+            System.out.println("2.Нет.");
+            Scanner sc3 = new Scanner(System.in);
+            int ynNum = sc3.nextInt();
+            switch (ynNum){
+                case(1):
+                    System.out.println("Введите ЗАДАННОЕ число (заданное число должно содержаться в массиве): ");
+                    i = sc3.nextInt();
+                    int n2 = 0;
+                    for (int u = 0; u < myArray.length ; u++) {
+                        if(myArray[u] == i){
+                    n2 ++;
+                        }
+                    }
+                    if(n2 > 0){
+                        n = 1;
+                    }
+                    else{
+                        System.out.println("Заданное число не подходит");
+                    }
+                    break;
+                case (2):
+                    System.out.println("Завершение программы.");
+                    break;
+            }
+
         }
 
         if(n != -1){
@@ -104,12 +131,76 @@ public class Main {
                             System.out.print(myArray3[e] + " ");
                         }
                         break;
+                    case(2):
+                        int [] myArray4 = new int[myArray.length];
+                        int myArrnum2 =0;
+                        for (int m = 0; m < myArray.length ; m++) {
+                            if(myArray[m] != i){
+                                myArray4[myArrnum2] = myArray[m];
+                                myArrnum2++;
+                            }
+                            else{
+                                int t = i/numZ;
+                                myArray4[myArrnum2] = t;
+                                myArrnum2++;
+                            }
+                        }
+
+                        System.out.println("Массив после изменения заданного числа :");
+                        for (int e = 0; e < myArray4.length ; e++) {
+                            System.out.print(myArray4[e] + " ");
+                        }
+                        break;
+                    case(3):
+                        int [] myArray5 = new int[myArray.length];
+                        int myArrnum3 =0;
+                        for (int m = 0; m < myArray.length ; m++) {
+                            if(myArray[m] != i){
+                                myArray5[myArrnum3] = myArray[m];
+                                myArrnum3++;
+                            }
+                            else{
+                                int t = i+numZ;
+                                myArray5[myArrnum3] = t;
+                                myArrnum3++;
+                            }
+                        }
+
+                        System.out.println("Массив после изменения заданного числа :");
+                        for (int e = 0; e < myArray5.length ; e++) {
+                            System.out.print(myArray5[e] + " ");
+                        }
+                        break;
+                    case (4):
+                        int [] myArray6 = new int[myArray.length];
+                        int myArrnum4 =0;
+                        for (int m = 0; m < myArray.length ; m++) {
+                            if(myArray[m] != i){
+                                myArray6[myArrnum4] = myArray[m];
+                                myArrnum4++;
+                            }
+                            else{
+                                int t = i - numZ;
+                                myArray6[myArrnum4] = t;
+                                myArrnum4++;
+                            }
+                        }
+
+                        System.out.println("Массив после изменения заданного числа :");
+                        for (int e = 0; e < myArray6.length ; e++) {
+                            System.out.print(myArray6[e] + " ");
+                        }
+                        break;
+                    default:
+                        System.out.println("Неккоректный ввод!");
+                        break;
 
                 }
 
                 break;
 
                 case (3):
+                    System.out.println("Завершение программы.");
                 break;
             default:
                 System.out.println("Некорректный ввод");
