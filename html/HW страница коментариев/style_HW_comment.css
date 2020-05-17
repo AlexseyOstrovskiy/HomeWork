@@ -1,0 +1,122 @@
+.header{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 5vh;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.header_logo{
+    font-size: 30px;
+    font-weight: 7000;
+    color:black;
+
+}
+
+.nav{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 40px;
+   
+}
+
+.nav_link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+    color: black;
+    text-decoration:none;
+    transition: color 1s linear;
+    position: relative;
+}
+
+.nav_link::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    display: none;
+    background-color:rgb(136, 206, 136) ;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+.nav_link:hover{
+    color: red;
+    font-size: larger;
+}
+
+.nav_link:hover:after{
+    display: block;
+    
+}
+
+#photo{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.intro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    
+}
+
+.intro_inner{
+    width: 90%;
+    max-width: 880px;
+    margin: 0 auto;
+    background-color: rgb(180, 181, 252);
+    border-radius: 20px;
+}
+
+.intro_inner_testuser{
+    width: 90%;
+    max-width: 880px;
+    margin: 0 auto;
+    background-color: rgb(201, 248, 73);
+    border-radius: 20px;
+}
+
+.intro_title{
+    color: green;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#comment{
+    font-size: 30px;
+}
+
+.footer{
+    font-size: 20px;
+}
+
+#footer_right{
+  float: right;
+}
+
+#mail{
+    color: chartreuse;
+}
+
+body{
+    background:url(back.jpg);
+    background-size: cover;
+}
