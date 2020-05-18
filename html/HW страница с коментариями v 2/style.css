@@ -1,0 +1,17 @@
+.container-1 div{
+    padding: 10px;
+    border: 1px solid silver;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+}
+
+
+
+.box-comment, .box-comment-testuser{
+    width: 60%;
+    padding: ;
+   
+}
+
