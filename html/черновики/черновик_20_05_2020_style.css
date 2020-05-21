@@ -8,7 +8,7 @@
     justify-content: space-around;
     flex-direction: column;
     align-items: center; 
-    
+    padding-top: 65px;   
 }
 
 .comment{
@@ -39,7 +39,7 @@
 }
 
 /*шапка страницы*/
-.header{
+/*.header{
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -107,4 +107,55 @@
 #photo{
     width: 50px;
     border-radius: 50%;
+}
+*/
+
+.container_head{
+    
+    /*justify-content: space-between;*/
+    width: 98%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    background-color: cadetblue;
+    
+
+}
+
+.theme_head{
+    width: 65%;
+    height: auto;
+    font-size: 28px;
+    
+}
+
+.testuser_head{
+    width:25%;
+    height: auto;
+    font-size: 28px;
+}
+
+.photo_head{
+    width: 10%;
+    height: auto;
+}
+
+#photo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    
+}
+
+.footer{
+    background-color: cadetblue;
+    font-size: 20px;
+}
+
+#footer_right{
+  float: right;
+}
+
+#mail{
+   
 }
