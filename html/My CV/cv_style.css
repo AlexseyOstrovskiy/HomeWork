@@ -33,11 +33,38 @@
 h1{
     font-size: 24px;
     margin-bottom:3px;
-    font-family: 'Pacifico', cursive;
-    
+    font-family: 'Pacifico', cursive;  
 }
+
 .name_2{
     font-size: 16px;
     margin-bottom: 3px;
-    
 }
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    width: 340px;
+    margin-left: 35px;
+}
+
+.address, .tel, .mail, .web{
+    margin-top: 10px;
+}
+
+h2{
+    margin-bottom: 0px;
+}
+
+.skills{
+    width: 340px;
+    margin-left: 35px;
+}
+
+.personal_quality{
+    width: 340px;
+    margin-left: 35px;
+}
+
+
