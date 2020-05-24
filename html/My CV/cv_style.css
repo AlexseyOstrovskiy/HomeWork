@@ -70,16 +70,16 @@ h2{
 
 /*Правая сторона*/
 
-.education{
+.education, .work_exp{
     width: 340px;
     margin-left: 35px;
 }
 
-.ed_val{
+.ed_val, .work_exp_val{
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
-.ed_h3{
+.ed_h3, .work_exp_h3{
     margin-bottom: 5px;
 }
