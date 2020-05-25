@@ -1,6 +1,8 @@
 /*Левая сторона*/
 .main_container{
     display: flex;
+    background: url(pic2.jpg) center;
+    background-size: cover;
   
 }
 
@@ -8,10 +10,12 @@
     background-color: cadetblue;
     height: 100%;
     width: 50%;
+    background: url(pic1.jpg) center;
+    background-size: cover;
 }
 
 .right_container{
-    background-color: chartreuse;
+   
     height: 100%;
     width: 50%;    
 }
@@ -55,7 +59,11 @@ h1{
 }
 
 h2{
+    font-family: 'Caveat', cursive;
+    font-size:36px ;
     margin-bottom: 0px;
+    text-decoration: underline; 
+    
 }
 
 .skills{
@@ -70,16 +78,18 @@ h2{
 
 /*Правая сторона*/
 
-.education, .work_exp{
+.education, .work_exp, .my_hobby{
     width: 340px;
     margin-left: 35px;
 }
 
-.ed_val, .work_exp_val{
+.ed_val, .work_exp_val, .my_hobby_val{
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
 .ed_h3, .work_exp_h3{
     margin-bottom: 5px;
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
 }
