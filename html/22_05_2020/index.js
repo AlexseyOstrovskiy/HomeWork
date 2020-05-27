@@ -90,5 +90,18 @@ function createTableRecord(name, age, email){
     let removeBtn = document.createElement('button');
     removeBtn.innerText= 'Удалить запись';
     tdButton.appendChild(removeBtn);
-    removeBtn.onclick = //TODO
+    removeBtn.onclick = function(){
+        let index = tr.rowIndex;
+        console.log(index);
+        removeTableRecord(index);
+    }
+    tr.appendChild(tdName);
+    tr.appendChild(tdEmail);
+    tr.appendChild(tdAge);
+    tr.appendChild(tdButton);
+    table.tBodies[0].appendChild(tr);  
+}
+
+function removeTableRecord(index){
+    table.deleteRow(index);
 }
