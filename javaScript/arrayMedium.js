@@ -30,26 +30,28 @@ let medium = sum / myArr.length;
 console.log("Среднее значение массива: ")
 console.log(medium);
 
+//***************************************************************************
+
 console.log("***Задача 2***");
-var value1 = prompt('Введите первое целое число');
-var value2 = prompt('Введите второе целое число');
-var value3 = prompt('Введите третье целое число');
+let valueMemory;
+let value1 = prompt('Введите первое целое число');
+let value2 = prompt('Введите второе целое число');
+let value3 = prompt('Введите третье целое число');
 
-if(value1 > value2 && value1 >value3){
-    alert('Наибольшее число из введённых ' + value1);
+if(value1 > value2){
+    valueMemory = value1;
+}
+else{
+    valueMemory = value2;
 }
 
-else if(value2 > value1 && value2 >value3){
-    alert('Наибольшее число из введённых ' + value2);
+if(value3 > valueMemory){
+    valueMemory = value3;
 }
 
-//if(value3 > value2 && value3 >value1){
-  else(alert('Наибольшее число из введённых ' + value3));
-//}
+alert('Наибольшее число из введённых ' + valueMemory);
 
-if(value1 == value2 & value2 == value3){
-    alert('Все введённые числа равны между собой.')
-};
+//******************************************************************************
 
 console.log("***Задача 3***");
 
@@ -63,38 +65,22 @@ console.log(randomNum);
 alert('Игра. Тебе нужно угадать число.');
 
 let userNum = prompt('Введите число от 1 до 100');
-let meter = 0;
+let meter = 1;
 
 if(userNum < 1 || userNum >100){
     alert('Число должно быть в передах 1 -100!')
 } 
 
-if(userNum == randomNum){
-    alert('Поздравляю! вы угадали!')
-}
-
-//if(userNum !=0){
 while(userNum != randomNum){
  if(userNum > randomNum){
      meter++;
      userNum = prompt('Меньше!',0)
-    //alert('Меньше.')
-
 }
-
-
 if(userNum < randomNum){
     meter++;
     userNum = prompt('Больше!',0)
-    //alert('Больше')
 }
-
-//if(userNum == 0){
-  //  alert('Введите число от 1 до 100!');
-//}
-
 }
-alert('Поздравляю, Вы угадали! Вам потребовалось ' + meter + 'попыток.' )
-//}
-//else(
-    //alert('Вы ничего не ввели!')
+alert('Поздравляю, Вы угадали! Вам потребовалось ' + meter + ' попыток.' )
+
+
