@@ -35,21 +35,37 @@ console.log(medium);
 console.log("***Задача 2***");
 let valueMemory;
 let value1 = prompt('Введите первое целое число');
-let value2 = prompt('Введите второе целое число');
-let value3 = prompt('Введите третье целое число');
-
-if(value1 > value2){
-    valueMemory = value1;
+if(value1 == null){
+    alert('Завершение работы программы')
 }
 else{
-    valueMemory = value2;
+let value1int = parseInt(value1);
+let value2 = prompt('Введите второе целое число');
+if (value2 == null){
+    alert('Завершение работы программы');
+}
+else{
+let value2int = parseInt(value2);
+let value3 = prompt('Введите третье целое число');
+if(value3 == null){
+    alert('Завершение работы программы');
+}
+else{
+let value3int = parseInt(value3);
+
+if(value1int > value2int){
+    valueMemory = value1int;
+}
+else{
+    valueMemory = value2int;
 }
 
-if(value3 > valueMemory){
-    valueMemory = value3;
+if(value3int > valueMemory){
+    valueMemory = value3int;
 }
 
 alert('Наибольшее число из введённых ' + valueMemory);
+}}}
 
 //******************************************************************************
 
@@ -65,6 +81,10 @@ console.log(randomNum);
 alert('Игра. Тебе нужно угадать число.');
 
 let userNum = prompt('Введите число от 1 до 100');
+if(userNum == null){
+    alert('Завершение работы программы');
+}
+else{
 let meter = 1;
 
 if(userNum < 1 || userNum >100){
@@ -81,6 +101,7 @@ if(userNum < randomNum){
     userNum = prompt('Больше!',0)
 }
 }
-alert('Поздравляю, Вы угадали! Вам потребовалось ' + meter + ' попыток.' )
+alert('Поздравляю, Вы угадали! Вам потребовалось ' + meter + ' попыток.' );
+}
 
 
