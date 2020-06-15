@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import {User, Login} from './models/user.model';
+
+import { User, Login } from './models/user.model';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

@@ -1,9 +1,14 @@
 <div>Hello Angular</div>
-<div>{{title}}</div>
+<div>{{ title }}</div>
 
 <p>Hello</p>
 
 <test></test>
-<test></test>
-<test></test>
-<test></test>
+
+<app-cart></app-cart>
+
+<a routerLink="/c1">Component 1</a>
+<a routerLink="/c2">Component 2</a>
+
+<!-- сюда буду загружаться другие компоненты -->
+<router-outlet></router-outlet>

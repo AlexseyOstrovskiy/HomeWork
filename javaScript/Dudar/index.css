@@ -1,0 +1,13 @@
+body{background: cornflowerblue;}
+
+.contForCoffe{
+    border:5px solid black;
+}
+
+.contForWater{
+    border:5px solid black;
+}
+
+.dialogBox{
+    border:5px solid yellowgreen;
+}
