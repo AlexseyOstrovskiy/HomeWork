@@ -35,7 +35,7 @@ dialog.innerText = messageHi;
 
 /*Кнопка Американо */
 var coffeForAmericano = 30;
-var waterForAmericano = 110;
+var waterForAmericano = 45;
 
 function makeAmericano(){
         if(coffeFullGr > coffeForAmericano && waterFullMl > waterForAmericano){
@@ -45,12 +45,15 @@ function makeAmericano(){
         coffeGr.innerText = coffeFullGr;
         dialog.innerText = messageAllOk;
     }     
-         if(coffeFullGr < coffeForAmericano){
+        else if(coffeFullGr < coffeForAmericano){
         dialog.innerText = messageNoCoffe;
          }
-         if(waterFullMl < waterForAmericano){
+         else if(waterFullMl < waterForAmericano){
             dialog.innerText = messageNoWater;
         }
+        else(
+            dialog.innerText = "Недостаточно воды и кофе в аппарате."
+        )
 }
 
 /*кнопка Эспрессо */
@@ -65,10 +68,14 @@ function makeEspresso(){
     coffeGr.innerText = coffeFullGr;
     dialog.innerText = messageAllOk;
 }     
-     if(coffeFullGr < coffeForEspresso){
+    else if(coffeFullGr < coffeForEspresso){
     dialog.innerText = messageNoCoffe;
      }
      if(waterFullMl < waterForEspresso){
         dialog.innerText = messageNoWater;
     }
+}
+
+function test(){
+    dialog.innerText = messageAllOk + "test";
 }
