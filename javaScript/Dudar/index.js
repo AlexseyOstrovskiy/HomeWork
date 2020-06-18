@@ -9,8 +9,9 @@ function more(){
 }
 */
 
+
 /* Надпись отображающая текущее количество коффке в баке */
-var coffeFullGr =500;
+var coffeFullGr =505;
 let coffeGr = document.getElementById("coffeGr");
 coffeGr.innerText = coffeFullGr;
 
@@ -33,19 +34,50 @@ let messageNoCoffe = "Для приготовления напитка недо�
 let messageAllOk = "Ваш напиток готов";
 dialog.innerText = messageHi;
 
-/*Кнопка Американо */
-var coffeForAmericano = 30;
-var waterForAmericano = 45;
 
-function makeAmericano(){
+
+/*Кнопка Американо */
+
+
+
+class CoffeeMachine{
+    constructor (//coffeForAmericano, waterForAmericano, 
+                //coffeForEspresso, waterForEspresso,
+               // coffeForWEspresso, waterForWEspresso,
+                coffeFullGr, waterFullMl){
+                   // this.coffeForAmericano = coffeForAmericano;
+                   // this.waterForAmericano = waterForAmericano;
+                   // this.coffeForEspresso = coffeForEspresso;
+                   // this.waterForEspresso = waterForEspresso;
+                   // this.coffeForWEspresso = coffeForWEspresso;
+                   // this.waterForWEspresso = waterForWEspresso;
+                    this.coffeFullGr = coffeFullGr;
+                    this.waterFullMl = waterFullMl;
+                }
+
+    /*Переменные */
+ 
+ coffeForEspresso =40 ;
+ waterForEspresso = 185;
+
+ coffeForWEspresso =50 ;
+ waterForWEspresso = 240;
+
+ makeAmericanoClass(){
+    coffeForAmericano = 30;
+    waterForAmericano = 90;
+   
         if(coffeFullGr > coffeForAmericano && waterFullMl > waterForAmericano){
-        waterFullMl = waterFullMl - waterForAmericano;
-        waterMl.innerText = waterFullMl;
-        coffeFullGr = coffeFullGr - coffeForAmericano;
-        coffeGr.innerText = coffeFullGr;
+            alert("Test");
+            return;}
+
+        this.waterFullMl = this.waterFullMl - waterForAmericano;
+        waterMl.innerText = this.waterFullMl;
+        this.coffeFullGr = this.coffeFullGr - coffeForAmericano;
+        coffeGr.innerText = this.coffeFullGr;
         dialog.innerText = messageAllOk;
     }     
-        else if(coffeFullGr < coffeForAmericano){
+  /*      else if(coffeFullGr < coffeForAmericano){
         dialog.innerText = messageNoCoffe;
          }
          else if(waterFullMl < waterForAmericano){
@@ -55,12 +87,11 @@ function makeAmericano(){
             dialog.innerText = "Недостаточно воды и кофе в аппарате."
         )
 }
-
+*/
 /*кнопка Эспрессо */
-var coffeForEspresso =40 ;
-var waterForEspresso = 185;
 
-function makeEspresso(){
+
+ makeEspresso(){
     if(coffeFullGr > coffeForEspresso && waterFullMl > waterForEspresso){
     waterFullMl = waterFullMl - waterForEspresso;
     waterMl.innerText = waterFullMl;
@@ -76,6 +107,44 @@ function makeEspresso(){
     }
 }
 
-function test(){
-    dialog.innerText = messageAllOk + "test";
+/*Кнопка Двойной эспрессо */
+
+ makeWEspresso(){
+    if(coffeFullGr > coffeForWEspresso && waterFullMl > waterForWEspresso){
+    waterFullMl = waterFullMl - waterForWEspresso;
+    waterMl.innerText = waterFullMl;
+    coffeFullGr = coffeFullGr - coffeForWEspresso;
+    coffeGr.innerText = coffeFullGr;
+    dialog.innerText = messageAllOk;
+}     
+    else if(coffeFullGr < coffeForWEspresso){
+    dialog.innerText = messageNoCoffe;
+     }
+     if(waterFullMl < waterForWEspresso){
+        dialog.innerText = messageNoWater;
+    }
 }
+}
+
+let coffeeMachine = new CoffeeMachine(505,);
+function makeAmericano(){
+    coffeeMachine.makeAmericanoClass;
+}
+
+//Test
+class Test{
+    constructor(text){
+        this.text = text;
+    } 
+     testMehtod(){
+         alert(this.text);
+     }
+}
+ let test = new Test("Hello");
+ test.testMehtod();
+
+ function btnTest(){
+    test.testMehtod();
+ }
+
+ 
