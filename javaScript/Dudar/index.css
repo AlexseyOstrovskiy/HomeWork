@@ -11,3 +11,18 @@ body{background: cornflowerblue;}
 .dialogBox{
     border:5px solid yellowgreen;
 }
+
+/*Header*/
+.header{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+    background: yellow;
+    width:460px;   
+    background: url(header.jpg); 
+}
+h1{
+    color: yellowgreen;
+}
+
+

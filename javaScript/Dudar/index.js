@@ -248,21 +248,5 @@ function fillTankCoffe(){
 
 
 
-/*
-//Test
-class Test{
-    constructor(text){
-        this.text = text;
-    } 
-     testMehtod(){
-         alert(this.text);
-     }
-}
- let test = new Test("Hello");
- test.testMehtod();
 
- function btnTest(){
-    test.testMehtod();
- }
-*/
  
