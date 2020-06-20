@@ -36,8 +36,61 @@ let messageFillCoffe = "Бак с коффе заполнен";
 let messageNoFillCoffe = "Бак с коффе уже/ещё полный!";
 dialog.innerText = messageHi;
 
+let graffCoffe =  document.getElementById("graffCoffe");//для графф.колич.коффе
+graffCoffe.innerHTML = "&#9899;&#9899;&#9899;&#9899;&#9899;"
+
+let graffWater =  document.getElementById("graffWater");//для графф.колич.воды
+graffWater.innerHTML = "&#9899;&#9899;&#9899;&#9899;&#9899;"
+
 /*Кнопка Американо */
 class CoffeeMachine{
+
+    /* Метод граффика коффе*/
+    paintGraffCoffe(){
+    if(coffeFullGr > 400){
+       graffCoffe.innerHTML = "&#9899;&#9899;&#9899;&#9899;&#9899;"
+   }
+   else if(coffeFullGr >300 && coffeFullGr < 400){
+       graffCoffe.innerHTML = "&#9899;&#9899;&#9899;&#9899;&#9898;"
+   }
+   else if(coffeFullGr >200 && coffeFullGr <300){
+       graffCoffe.innerHTML = "&#9899;&#9899;&#9899;&#9898;&#9898;"
+   }
+   else if (coffeFullGr > 100 && coffeFullGr < 200){
+       graffCoffe.innerHTML = "&#9899;&#9899;&#9898;&#9898;&#9898;"
+   }
+   else if( coffeFullGr > 30 && coffeFullGr < 100){
+       graffCoffe.innerHTML = "&#9899;&#9898;&#9898;&#9898;&#9898;"}
+       else if(coffeFullGr < 30){
+           graffCoffe.innerHTML = "&#9898;&#9898;&#9898;&#9898;&#9898;"
+       }
+   }
+/* конец Метод граффика коффе*/
+
+/* Метод граффика воды*/
+paintGraffWater(){
+    if(waterFullMl > 800){
+        graffWater.innerHTML = "&#9899;&#9899;&#9899;&#9899;&#9899;"
+   }
+   else if(waterFullMl >600 && waterFullMl < 800){
+    graffWater.innerHTML = "&#9899;&#9899;&#9899;&#9899;&#9898;"
+   }
+   else if(waterFullMl >400 && waterFullMl <600){
+    graffWater.innerHTML = "&#9899;&#9899;&#9899;&#9898;&#9898;"
+   }
+   else if (waterFullMl > 200 && waterFullMl < 400){
+    graffWater.innerHTML = "&#9899;&#9899;&#9898;&#9898;&#9898;"
+   }
+   else if( waterFullMl > 90 && waterFullMl < 200){
+    graffWater.innerHTML = "&#9899;&#9898;&#9898;&#9898;&#9898;"}
+       else if(waterFullMl < 90){
+        graffWater.innerHTML = "&#9898;&#9898;&#9898;&#9898;&#9898;"
+       }
+   }
+/* конец Метод граффика воды*/
+
+
+
     constructor (coffeForAmericano, waterForAmericano, 
                 coffeForEspresso, waterForEspresso,
                 coffeForWEspresso, waterForWEspresso,
@@ -60,8 +113,6 @@ class CoffeeMachine{
 
  makeAmericanoClass(){
         if(coffeFullGr > coffeForAmericano && waterFullMl > waterForAmericano){
-           // alert("Test");
-            //return;}
         waterFullMl = waterFullMl - this.waterForAmericano;
         waterMl.innerText = waterFullMl;
         coffeFullGr = coffeFullGr - this.coffeForAmericano;
@@ -77,6 +128,9 @@ class CoffeeMachine{
         else(
             dialog.innerText = "Недостаточно воды и кофе в аппарате."
         )
+
+        this.paintGraffCoffe();      
+        this.paintGraffWater(); 
 }
 
 /*кнопка Эспрессо */
@@ -94,6 +148,9 @@ class CoffeeMachine{
      if(waterFullMl < waterForEspresso){
         dialog.innerText = messageNoWater;
     }
+
+    this.paintGraffCoffe();
+    this.paintGraffWater();
 }
 
 /*Кнопка Двойной эспрессо */
@@ -112,6 +169,9 @@ class CoffeeMachine{
      if(waterFullMl < waterForWEspresso){
         dialog.innerText = messageNoWater;
     }
+
+    this.paintGraffCoffe();
+    this.paintGraffWater();
 }
 
 /*Заполнить бак с водой */
@@ -120,6 +180,7 @@ fillTankWaterClass(){
         waterFullMl = this.waterFullMlValue;
         waterMl.innerText = waterFullMl;
         dialog.innerText = messageFillWater;
+        graffWater.innerHTML = "&#9899;&#9899;&#9899;&#9899;&#9899;"
     }
     else{
         dialog.innerText = messageNoFillWater;
@@ -132,11 +193,13 @@ fillTankCoffeClass(){
         coffeFullGr = this.coffeFullGrValue;
         coffeGr.innerText = coffeFullGr;
         dialog.innerText = messageFillCoffe;
+        graffCoffe.innerHTML = "&#9899;&#9899;&#9899;&#9899;&#9899;"
     }
     else{
         dialog.innerText = messageNoFillCoffe;
     }
 }
+
 }
 
 
@@ -149,6 +212,9 @@ coffeForAmericano = 30;
  waterForAmericano = 90;
  coffeFullGrValue = 500;//Объём бака с коффе
  waterFullMlValue = 1000;//Объём бака с водой
+
+
+ 
 
 
  /*Объект класса коффемашина */
@@ -179,7 +245,6 @@ function fillTankWater(){
 function fillTankCoffe(){
     coffeeMachine.fillTankCoffeClass();
 }
-
 
 
 
