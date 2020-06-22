@@ -1,0 +1,56 @@
+.header{
+    font-size: 45px ;
+    background: yellowgreen;
+    padding: 15px;
+   /* height: auto;
+    width: 150px;*/
+    text-align: center;
+}
+
+.parametrs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: blueviolet;
+    font-size: 32px;
+}
+
+.parametrWaterText{
+    background: cyan;
+}
+
+.parametrWaterGraff{
+    background: darkcyan;
+}
+
+.parametrCoffeText{
+    background: darkgoldenrod;
+}
+
+.parametrCoffeGraff{
+    background: darkolivegreen;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.americano{
+    background: darkred;
+}
+
+.espresso{
+    background: darkseagreen;
+}
+
+.wEspresso{
+    background: firebrick;
+}
+
+.dialog{
+    background: gray;
+    display: flex;
+    justify-content: center;
+}
