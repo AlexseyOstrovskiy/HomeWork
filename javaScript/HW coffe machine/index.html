@@ -3,10 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoffeMachine</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="mCoffe">Колличество кофе в баке mCoffe</div>
+<body>  
+
+    <div class="header">
+        <h1 class="h1">Ostrovsky's coffee machine!</h1>
+    </div>
+    <br>
+   
+<div class="parametrs">
+
+    <div class="parametrCoffe">
+    <div class="contForCoffe">
+        <div>Текущее колиество кофе в баке для коффе, гр.: 
+        <div id="coffeGr"></div>
+        </div>
+        <div id="graffCoffe"></div>
+    </div>
+    </div>
+    
+
+    <!--Надпись отображающая текущее количество воды в баке-->
+    <div class="parametrWater">
+    <div class="contForWater">
+        <div>Текущее колиество воды в баке для коффе, млл.: 
+        <div id="waterMl"></div>
+        </div>
+        <div id="graffWater"></div>
+    </div>  
+    </div>
+
+</div>
+<br>
+
+<div class="button">
+    <!--Кнопка Американо-->
+    <div class="btnAmericano" >
+        <button class="btnAmericanoBTN" onclick="makeAmericano()">Американо</button>
+    </div>
+
+    <!--Кнопка Эспрессо-->
+    <div class="btnEspresso" >
+        <button class="btnEspressoBTN"  onclick="makeEspresso()">Эспрессо</button>
+    </div>
+
+    <!--Кнопка Двойной эспрессо-->
+    <div class="btnWEspresso" >
+        <button  class="btnWEspressoBTN"  onclick="makeWEspresso()">Двойной эспрессо</button>
+    </div>
+
+    <!--Кнопка заполнить бак с водой-->
+    <div class="fillWater" >
+        <button class="fillWaterBTN"  onclick="fillTankWater()">Заполнить бак с водой</button>
+    </div>
+
+    <!--Кнопка заполнить бак с коффе-->
+    <div class="fillCoffe" >
+        <button class="fillCoffeBTN"  onclick="fillTankCoffe()">Заполнить бак с коффе</button>
+    </div>
+
+</div>
+<br>
+
+<!--Диалоговое окно-->
+<div class="dialogBox">
+    <div id="dialogBoxId"> </div>
+</div>
+
     <script src="index.js"></script>
 </body>
 </html>

@@ -13,12 +13,16 @@ const routes: Routes = [
   {
     path: "store",
     component: StoreComponent,
-    children:[
-      {path: "",
-      pathMatch: "full",
-    redirectTo:"menu"},
-    {path:"menu",
-  component: MenuComponent}
+    children: [
+      {
+        path: "",
+        pathMatch: "full",
+        redirectTo: "menu"
+      },
+      {
+        path: "menu",
+        component: MenuComponent
+      }
     ]
   }
 ];

@@ -1,17 +1,17 @@
-<mat-drawer-container  autosize>
-    <mat-drawer #drawer  mode="side">
-        <mat-selection-list (selectionChange)="showItems($event)"  [multiple]="false">
-            <mat-list-option *ngFor="let category of categories">
-              {{category.name}}
-            </mat-list-option>
-          </mat-selection-list>
-          
-    </mat-drawer>
-  
-    <div class="example-sidenav-content">
-      <button type="button" mat-button (click)="drawer.toggle()">
-        Toggle sidenav
-      </button>
-    </div>
-  
-  </mat-drawer-container>
+<mat-drawer-container autosize>
+
+  <mat-drawer #drawer mode="side">
+    <mat-selection-list (selectionChange)="showItems($event)" [multiple]="false">
+      <mat-list-option [value]="category.id" *ngFor="let category of categories">
+        {{ category.name }}
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+  </div>
+
+</mat-drawer-container>
