@@ -1,0 +1,12 @@
+body{
+    background-color: aquamarine;
+}
+
+#modWindow{
+    background-color: blueviolet;
+    height: 50px;
+    width: 250px;
+   margin-top: 80px;
+   margin-left: 250px;
+   display: none;
+}
