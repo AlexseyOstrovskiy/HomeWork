@@ -1,0 +1,21 @@
+/*#previewVideo{
+    height: auto;
+    width: auto;
+    background: blue;
+    
+}
+#nameVideo{
+    background: chartreuse;
+}
+#timeVideo{
+    background: cornflowerblue;
+}
+.contCard{background: greenyellow;
+    height: 350px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+}*/

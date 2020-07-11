@@ -37,7 +37,7 @@ function initialize(countriesData){
  countries.forEach(country  => options += `<option value="${country.alpha3Code}">${country.name} </option>`);
 //document.getElementById("countries").innerHTML = options;
  //document.querySelector("#countries").innerHTML = options;
-countrieslist.innerHTML = options;
+countrieslist.innerHTML = options;  
 displayCountryInfo("AFG");
 }
 
