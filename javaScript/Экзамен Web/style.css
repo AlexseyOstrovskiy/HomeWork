@@ -19,3 +19,13 @@
     justify-content: space-around;
     align-items: center;
 }*/
+
+
+/*Всплывающее окно*/
+#secondWindow{
+    background-color: blueviolet;
+    height: 95%;
+    width: 100%;
+   display: none;
+   position: fixed;
+}

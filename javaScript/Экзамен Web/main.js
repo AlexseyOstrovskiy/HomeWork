@@ -195,3 +195,25 @@ for(var i =0 ; i < data.length; i++){
     TIME[i] =  document.getElementById('timeID' + i);
     TIME[i] .innerText = data[i].duration;
      }
+
+     //всплывающее окно
+     let secondWindow = document.getElementById('secondWindow');
+     
+
+     let btn = [];
+     for(var i =0 ; i < data.length; i++){
+         btn[i] = document.getElementById('previewID' + i);
+        }
+
+     let btnClose = document.querySelector('.close');
+
+     for(var i =0 ; i < data.length; i++){
+     btn[i].onclick=function(){
+        secondWindow.style.display ="block";
+    }
+}
+
+    btnClose.onclick = function(){
+        secondWindow.style.display ="none";
+    }
+    
