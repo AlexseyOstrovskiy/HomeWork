@@ -134,6 +134,8 @@ data =[
         }
     }
 ]
+  
+ 
 
 //функция для динамического создания блоков див для prewiev
 function createPreview(id){
@@ -144,6 +146,8 @@ function createPreview(id){
     div.style.backgroundColor = 'red';
     div.style.margin = '15px';
     return div;
+
+   
 }
 
 //функция для динамического создания блоков див для name
@@ -199,7 +203,7 @@ for(var i =0 ; i < data.length; i++){
     PREVIEW[i] = document.createElement("img");
     PREVIEW[i].src = data[i].preview;
     previewVideo[i].appendChild( PREVIEW[i]);
-    test = i;
+   
   
 
     NAME[i] =  document.getElementById('nameID' + i);
@@ -209,32 +213,39 @@ for(var i =0 ; i < data.length; i++){
     TIME[i] .innerText = data[i].duration;
      }
 
-       //Массив с ссылками на видео
- let arrVideo =[];
- for(i = 0; i < data.length; i++){
-     arrVideo [i] = data[i].url.url;
- }
- console.log(arrVideo);
- 
- video = document.getElementById("video" );
- video.src = arrVideo[3];
-
- 
-
+    
+ //Массив с ссылками на видео
+ let arrVideo = [];
+ let video = [];
+  for(i = 0; i < data.length; i++){
+      arrVideo [i] = data[i].url.url;
+  }
+  
+  console.log(arrVideo);
+  video = document.getElementById("video" );
+ // video.src = arrVideo[];
+  
+  
      //всплывающее окно
      let secondWindow = document.getElementById('secondWindow');
  
      let btn = [];
      for(var i =0 ; i < data.length; i++){
          btn[i] = document.getElementById('previewID' + i);
+         
         }
 
      let btnClose = document.querySelector('.close');
 
      for(var i =0 ; i < data.length; i++){
+        
      btn[i].onclick=function(){
         secondWindow.style.display ="block";   
     }
+    let test;
+        test = i;
+        console.log("TEST" + test);
+   
 }
 
 
