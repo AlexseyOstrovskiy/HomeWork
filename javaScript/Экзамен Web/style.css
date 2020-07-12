@@ -29,3 +29,7 @@
    display: none;
    position: fixed;
 }
+
+#videoPlayer{
+    background-color: aqua;
+}

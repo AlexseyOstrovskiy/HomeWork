@@ -174,13 +174,24 @@ let NAME =[];
 let TIME =[];
 let previewVideo =[];
 
+
+ 
+ 
+
 //Динамическое создание блоков div
 for(var i =0 ; i < data.length; i++){
     document.body.appendChild(createPreview('previewID'+i));
     document.body.appendChild(createName('nameID'+i));
     document.body.appendChild(createTime('timeID'+i));
+    let test;
     }
 
+
+    
+
+     
+   
+    
 //Запись значений в динамически созданные блоки
 for(var i =0 ; i < data.length; i++){
   
@@ -188,6 +199,8 @@ for(var i =0 ; i < data.length; i++){
     PREVIEW[i] = document.createElement("img");
     PREVIEW[i].src = data[i].preview;
     previewVideo[i].appendChild( PREVIEW[i]);
+    test = i;
+  
 
     NAME[i] =  document.getElementById('nameID' + i);
     NAME[i] .innerText = data[i].name;
@@ -196,10 +209,21 @@ for(var i =0 ; i < data.length; i++){
     TIME[i] .innerText = data[i].duration;
      }
 
+       //Массив с ссылками на видео
+ let arrVideo =[];
+ for(i = 0; i < data.length; i++){
+     arrVideo [i] = data[i].url.url;
+ }
+ console.log(arrVideo);
+ 
+ video = document.getElementById("video" );
+ video.src = arrVideo[3];
+
+ 
+
      //всплывающее окно
      let secondWindow = document.getElementById('secondWindow');
-     
-
+ 
      let btn = [];
      for(var i =0 ; i < data.length; i++){
          btn[i] = document.getElementById('previewID' + i);
@@ -209,11 +233,23 @@ for(var i =0 ; i < data.length; i++){
 
      for(var i =0 ; i < data.length; i++){
      btn[i].onclick=function(){
-        secondWindow.style.display ="block";
+        secondWindow.style.display ="block";   
     }
 }
+
+
 
     btnClose.onclick = function(){
         secondWindow.style.display ="none";
     }
-    
+   
+   
+
+     
+
+  
+    /*let video = [];
+    for(var i =0 ; i < data.length; i++){
+   video[i] = document.getElementById("video" + i);
+  video.src = arrVideo[i];
+  }*/

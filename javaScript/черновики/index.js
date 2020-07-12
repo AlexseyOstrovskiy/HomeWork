@@ -16,3 +16,7 @@ window.onclick = function(e){
         modWindow.style.display ="none";
     }
 }
+
+/*<video>
+        <source src="">
+    </video> */
