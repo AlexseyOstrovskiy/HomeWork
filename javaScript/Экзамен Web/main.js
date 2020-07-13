@@ -135,19 +135,15 @@ data =[
     }
 ]
   
- 
-
 //функция для динамического создания блоков див для prewiev
 function createPreview(id){
     var div = document.createElement('div');
     div.id = id;
-    div.style.width  = '600px';
-    div.style.height = '350px';
+    div.style.width  = '500px';
+    div.style.height = '300px';
     div.style.backgroundColor = 'red';
     div.style.margin = '15px';
     return div;
-
-   
 }
 
 //функция для динамического создания блоков див для name
@@ -172,30 +168,65 @@ function createTime(id){
     return div;
 }
 
+function createCard(id){
+    var div = document.createElement('div');
+    div.id = id;
+    div.style.width  = '550px';
+    div.style.height = '450px';
+    div.style.background = 'grey';
+    div.style.margin = '35px';
+    div.style.display = 'flex';
+    div.style.flexDirection = 'column';
+   div.style.alignItems = 'center';
+    return div;
+}
+
+//Функция создания тега <video>
+function createVideo(id){
+    var video =document.createElement('video');
+    video.id = id;
+    video.style.width="250";
+    video.style.backgroundColor = 'pink';
+    return video;
+}
+
+//Функция создания тега <source>
+function createSource(src){
+    var source = document.createElement('source');
+    source.src = src;
+    return source;
+}
+
 //Вспомогательные массивы
 let PREVIEW = [];
 let NAME =[];
 let TIME =[];
 let previewVideo =[];
-
-
+let PLAY = [];
+let playVideo = [];
  
- 
-
 //Динамическое создание блоков div
 for(var i =0 ; i < data.length; i++){
-    document.body.appendChild(createPreview('previewID'+i));
-    document.body.appendChild(createName('nameID'+i));
-    document.body.appendChild(createTime('timeID'+i));
+    document.body.appendChild(createCard('cardID' + i));
+}
+
+for(var i =0 ; i < data.length; i++){
+    //document.body.appendChild(createCard('cardID' + i))
+    document.getElementById("cardID" +i ).appendChild(createPreview('previewID'+i));
+    document.getElementById("cardID" +i ).appendChild(createName('nameID'+i));
+    document.getElementById("cardID" +i ).appendChild(createTime('timeID'+i));
     let test;
     }
 
+//Массив с ссылками на видео
+let arrVideo = [];
+for(i = 0; i < data.length; i++){
+    arrVideo [i] = data[i].url.url;
+}
 
-    
+//Создание тега video    
+document.getElementById("videoPlayer").appendChild(createVideo('videoID')); 
 
-     
-   
-    
 //Запись значений в динамически созданные блоки
 for(var i =0 ; i < data.length; i++){
   
@@ -203,64 +234,56 @@ for(var i =0 ; i < data.length; i++){
     PREVIEW[i] = document.createElement("img");
     PREVIEW[i].src = data[i].preview;
     previewVideo[i].appendChild( PREVIEW[i]);
-   
   
-
     NAME[i] =  document.getElementById('nameID' + i);
     NAME[i] .innerText = data[i].name;
 
     TIME[i] =  document.getElementById('timeID' + i);
     TIME[i] .innerText = data[i].duration;
+
+   /* playVideo[i] = document.getElementById('videoID' + i);
+    PLAY[i] = document.createElement("video");
+    PLAY[i].src = data[i].url.url;
+    playVideo[i].appendChild( PLAY[i]);
+   */
      }
 
-    
- //Массив с ссылками на видео
- let arrVideo = [];
- let video = [];
-  for(i = 0; i < data.length; i++){
-      arrVideo [i] = data[i].url.url;
+  console.log(arrVideo);
+  /*
+  let video = document.getElementById("video" );
+  for(var i =0 ; i < data.length; i++){
+  video.setAttribute('src', data[i].url.url)
+  //video.src = arrVideo[5];
   }
   
-  console.log(arrVideo);
-  video = document.getElementById("video" );
- // video.src = arrVideo[];
-  
-  
+  */
+
      //всплывающее окно
      let secondWindow = document.getElementById('secondWindow');
- 
      let btn = [];
+
      for(var i =0 ; i < data.length; i++){
          btn[i] = document.getElementById('previewID' + i);
-         
         }
 
      let btnClose = document.querySelector('.close');
 
      for(var i =0 ; i < data.length; i++){
-        
      btn[i].onclick=function(){
-        secondWindow.style.display ="block";   
+        secondWindow.style.display ="block"; 
+    //  document.getElementById("videoID").appendChild(createSource(arrVideo[i]));
     }
-    let test;
-        test = i;
-        console.log("TEST" + test);
-   
-}
+    document.getElementById("videoID").appendChild(createSource(arrVideo[i])); //Воспроизводится только видео с 0 индексом из массива
+    }
 
-
-
+    //Закрытие всплывющего окна
     btnClose.onclick = function(){
         secondWindow.style.display ="none";
     }
    
-   
+           
 
      
 
   
-    /*let video = [];
-    for(var i =0 ; i < data.length; i++){
-   video[i] = document.getElementById("video" + i);
-  video.src = arrVideo[i];
-  }*/
+    
