@@ -1,0 +1,5 @@
+body{
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+}
