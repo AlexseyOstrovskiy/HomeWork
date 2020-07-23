@@ -1,0 +1,12 @@
+<mat-drawer-container  autosize>
+    <mat-drawer #drawer  mode="side" [opened]="isMenuOpened">
+        <mat-selection-list (selectionChange)="showItems($event)" [multiple]="false">
+            <mat-list-option [value]=category.id *ngFor="let category of categories">
+              {{ category.name }}
+            </mat-list-option>
+          </mat-selection-list>
+    </mat-drawer>
+
+    <app-item-card *ngFor="let item of items" [item]="item"></app-item-card>
+  
+  </mat-drawer-container>

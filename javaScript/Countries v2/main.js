@@ -80,15 +80,14 @@ let FLAG_FLAG = [];
 setTimeout(
     ()=>{
 for(let i = 0; i <arr.length; i++){
-    document.body.appendChild(mainCard('card' +i));
+    //document.body.appendChild(mainCard('card' +i));
+    document.getElementById("cardHolder").appendChild(mainCard('card' +i));
 }
 
 for(let i = 0; i <arr.length; i++){
 document.getElementById("card"+i).appendChild(name('name' + i));
 document.getElementById("card"+i).appendChild(flag('flag' + i));
 document.getElementById("card"+i).appendChild(population('population' + i));
-
-//document.getElementById('flag' + i).appendChild(flagImg('flagImg' + i));
 }
 
 for(let i = 0; i <arr.length; i++){

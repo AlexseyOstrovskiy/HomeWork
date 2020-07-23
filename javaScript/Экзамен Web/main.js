@@ -182,11 +182,11 @@ function createCard(id){
 }
 
 //Функция создания тега <video>
-function createVideo(id){
+function createVideo(){
     var video =document.createElement('video');
-    video.id = id;
     video.style.width="250";
     video.style.backgroundColor = 'pink';
+    video.controls = true;
     return video;
 }
 
@@ -225,7 +225,7 @@ for(i = 0; i < data.length; i++){
 }
 
 //Создание тега video    
-document.getElementById("videoPlayer").appendChild(createVideo('videoID')); 
+// document.getElementById("videoPlayer").appendChild(createVideo('videoID')); 
 
 //Запись значений в динамически созданные блоки
 for(var i =0 ; i < data.length; i++){
@@ -268,12 +268,18 @@ for(var i =0 ; i < data.length; i++){
 
      let btnClose = document.querySelector('.close');
 
-     for(var i =0 ; i < data.length; i++){
-     btn[i].onclick=function(){
-        secondWindow.style.display ="block"; 
-    //  document.getElementById("videoID").appendChild(createSource(arrVideo[i]));
-    }
-    document.getElementById("videoID").appendChild(createSource(arrVideo[i])); //Воспроизводится только видео с 0 индексом из массива
+     for(let i =0 ; i < data.length; i++){
+        btn[i].onclick=function(){
+            secondWindow.style.display ="block";
+            let videoBlock = document.getElementById("videoPlayer");
+            videoBlock.innerHTML = "";
+            let videoPlayer = createVideo();
+            let source = createSource(arrVideo[i]);
+            videoPlayer.appendChild(source);
+            videoPlayer.play();
+            videoBlock.appendChild(videoPlayer);
+        }
+        //document.getElementById("videoID").appendChild(createSource(arrVideo[i])); //Воспроизводится только видео с 0 индексом из массива
     }
 
     //Закрытие всплывющего окна
