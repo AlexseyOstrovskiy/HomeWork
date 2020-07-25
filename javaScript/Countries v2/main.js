@@ -55,14 +55,6 @@ function flag(id){
     return div;
 }
 
-/*function flagImg(id){
-    var img =document.createElement("img");
-    img.id = id;
-    img.style.width  = '240px';
-    img.style.height = '100px';
-}
-*/
-
 function population(id){
     var div = document.createElement('div');
     div.id = id;
@@ -82,7 +74,6 @@ let FLAG_FLAG = [];
 setTimeout(
     ()=>{
 for(let i = 0; i <arr.length; i++){
-    //document.body.appendChild(mainCard('card' +i));
     document.getElementById("cardHolder").appendChild(mainCard('card' +i));
 }
 
@@ -110,7 +101,7 @@ FLAG[i].appendChild(FLAG_FLAG[i]);
 
 }
 },
- 3000);
+ 100);
 
  //input
 let btn;
@@ -120,90 +111,41 @@ btn.onclick = function(){
     search = document.getElementById('inputID').value;
     alert(search);
     cardHolder.style.display = "none";
-/*
+
     let x;
     for(let i = 0; i <arr.length; i++){
-        if(arr[i].name = search){
+        if(arr[i].name == search){
         x = i;
         }
     }
-    */
-   // console.log(arr[x].name + arr[x].population + arr[x].flag);
 
-/*
-    let NAME1;
-    let POPULATION1;
-    let FLAG1;
-    let FLAG_FLAG1;
+    let NAMES;
+    let POPULATIONS;
+    let FLAGS;
+    let FLAG_FLAGS;
 
-document.body.appendChild(mainCard('card'));
-document.getElementById("card").appendChild(name('name'));
-document.getElementById("card").appendChild(flag('flag'));
-document.getElementById("card").appendChild(population('population'));
+    document.getElementById("secondWindow").appendChild(mainCard('cardS'));
+    document.getElementById("cardS").appendChild(name('nameS'));
+    document.getElementById("cardS").appendChild(flag('flagS'));
+    document.getElementById("cardS").appendChild(population('populationS'));
+    
+    NAMES = document.getElementById('nameS');
+    NAMES.innerText = arr[x].name;
 
-NAME1 = document.getElementById('name');
-NAME1.innerText = arr[x].name;
-
-POPULATION1 = document.getElementById('population');
-POPULATION1.innerText = "Население = " + arr[x].population + "человек.";
+    POPULATIONS = document.getElementById('populationS');
+    POPULATIONS.innerText = "Население = " + arr[x].population + "человек.";
 
 
-FLAG1 = document.getElementById('flag');
-FLAG_FLAG1 = document.createElement("img");
+    FLAGS = document.getElementById('flagS');
+    FLAG_FLAGS = document.createElement("img");
 
-FLAG_FLAG1.src = arr[x].flag;
-FLAG_FLAG1.height = 100;
-FLAG_FLAG1.width = 240;
-FLAG1.appendChild(FLAG_FLAG1);
-   */
-  
-   function getCountry(countryName) {
-    return new Promise((resolve,reject) => {
-        $.ajax({
-               url: 'https://restcountries.eu/rest/v2/name/' + countryName,
-           success(data) {
-               resolve(data);
-           },
-           error(err) {
-               reject(err);
-           }
-       });   
-   });
-} 
+    FLAG_FLAGS.src = arr[x].flag;
+    FLAG_FLAGS.height = 100;
+    FLAG_FLAGS.width = 240;
+    FLAGS.appendChild(FLAG_FLAGS);
 
-    //requestURL2 = 'https://restcountries.eu/rest/v2/name/' + a
-    //sendRequest('GET', requestURL2)
-    //return a;
- }
- 
+    secondWindow.style.display ="block";
+    console.log(arr[x].name + arr[x].population + arr[x].flag)
 
-//let b = btn.onclick -5;
-//console.log(b);
-//alert(b);
 
-/*console.log("*****************");
-
-let arr2 = [];
-const requestURL3 = 'https://restcountries.eu/rest/v2/currency/cop'
-function sendRequest(){   
-    return new Promise((resolve, reject)=>{
-const xhr = new XMLHttpRequest();
-xhr.open('GET', requestURL3)
-xhr.onload = () =>{
-    console.log(JSON.parse(xhr.response))
-    arr = JSON.parse(xhr.response);
 }
-xhr.onerror=()=>{
-    console.log(xhr.response)
-}
-xhr.send()
-})
-}
-
-sendRequest('GET', requestURL)
-.then(data=> console.log(data)) 
-.catch(err => console.log(err))
-
-
-console.log("*****************");
-*/
