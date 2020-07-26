@@ -109,16 +109,15 @@ btn = document.getElementById('btn');
 let search;
 btn.onclick = function(){
     search = document.getElementById('inputID').value;
-    alert( "1 " + search);
     cardHolder.style.display = "none";
 
     let x;
     for(let i = 0; i <arr.length; i++){
         if(arr[i].name == search){
         x = i;
-        alert( "2 " + x);
         }
     }
+    
     let arr2 = [];
             const requestURL2 = 'https://restcountries.eu/rest/v2/name/' + search;
             function sendRequest2(){   
@@ -143,36 +142,19 @@ btn.onclick = function(){
             let NAMES;
             let POPULATIONS;
             let FLAGS;
-            let FLAG_FLAGS;
-
-            document.getElementById("secondWindow").appendChild(mainCard('cardS'));
-            document.getElementById("cardS").appendChild(name('nameS'));
-            document.getElementById("cardS").appendChild(flag('flagS'));
-            document.getElementById("cardS").appendChild(population('populationS'));
-
+            
     setTimeout(
-        ()=>{
-            console.log(arr2);
-           // console.log(arr2[0].name)
-            
-
-            let cleaner = document.getElementById('nameS');
-            cleaner.innerText = "";
-            NAMES = document.getElementById('nameS');
-            
+        ()=>{   
+            NAMES = document.getElementById('nameSW');
             NAMES.innerText = arr2[0].name;
 
-            POPULATIONS = document.getElementById('populationS');
+            POPULATIONS = document.getElementById('populationSW');
             POPULATIONS.innerText = "Население = " + arr2[0].population + "человек.";
+            
+            FLAGS = document.getElementById('img');
+            FLAGS.src = arr2[0].flag;
 
-            FLAGS = document.getElementById('flagS');
-            FLAG_FLAGS = document.createElement("img");
-
-            FLAG_FLAGS.src = arr2[0].flag;
-            FLAG_FLAGS.height = 100;
-            FLAG_FLAGS.width = 240;
-            FLAGS.appendChild(FLAG_FLAGS);
-            secondWindow.style.display ="block";
+            secondWindow.style.display ="block"; 
         },
          300);
 
