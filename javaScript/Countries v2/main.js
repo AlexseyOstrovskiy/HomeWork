@@ -109,43 +109,73 @@ btn = document.getElementById('btn');
 let search;
 btn.onclick = function(){
     search = document.getElementById('inputID').value;
-    alert(search);
+    alert( "1 " + search);
     cardHolder.style.display = "none";
 
     let x;
     for(let i = 0; i <arr.length; i++){
         if(arr[i].name == search){
         x = i;
+        alert( "2 " + x);
         }
     }
+    let arr2 = [];
+            const requestURL2 = 'https://restcountries.eu/rest/v2/name/' + search;
+            function sendRequest2(){   
+                return new Promise((resolve, reject)=>{
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', requestURL2)
+            xhr.onload = () =>{
+                //console.log(JSON.parse(xhr.response))
+                arr2 = JSON.parse(xhr.response);
+            }
+            xhr.onerror=()=>{
+                console.log(xhr.response)
+            }
+            xhr.send()
+            })
+            }
 
-    let NAMES;
-    let POPULATIONS;
-    let FLAGS;
-    let FLAG_FLAGS;
+            sendRequest2('GET', requestURL2)
+            .then(data=> console.log(data)) 
+            .catch(err => console.log(err))
 
-    document.getElementById("secondWindow").appendChild(mainCard('cardS'));
-    document.getElementById("cardS").appendChild(name('nameS'));
-    document.getElementById("cardS").appendChild(flag('flagS'));
-    document.getElementById("cardS").appendChild(population('populationS'));
-    
-    NAMES = document.getElementById('nameS');
-    NAMES.innerText = arr[x].name;
+            let NAMES;
+            let POPULATIONS;
+            let FLAGS;
+            let FLAG_FLAGS;
 
-    POPULATIONS = document.getElementById('populationS');
-    POPULATIONS.innerText = "Население = " + arr[x].population + "человек.";
+            document.getElementById("secondWindow").appendChild(mainCard('cardS'));
+            document.getElementById("cardS").appendChild(name('nameS'));
+            document.getElementById("cardS").appendChild(flag('flagS'));
+            document.getElementById("cardS").appendChild(population('populationS'));
 
+    setTimeout(
+        ()=>{
+            console.log(arr2);
+           // console.log(arr2[0].name)
+            
 
-    FLAGS = document.getElementById('flagS');
-    FLAG_FLAGS = document.createElement("img");
+            let cleaner = document.getElementById('nameS');
+            cleaner.innerText = "";
+            NAMES = document.getElementById('nameS');
+            
+            NAMES.innerText = arr2[0].name;
 
-    FLAG_FLAGS.src = arr[x].flag;
-    FLAG_FLAGS.height = 100;
-    FLAG_FLAGS.width = 240;
-    FLAGS.appendChild(FLAG_FLAGS);
+            POPULATIONS = document.getElementById('populationS');
+            POPULATIONS.innerText = "Население = " + arr2[0].population + "человек.";
 
-    secondWindow.style.display ="block";
-    console.log(arr[x].name + arr[x].population + arr[x].flag)
+            FLAGS = document.getElementById('flagS');
+            FLAG_FLAGS = document.createElement("img");
 
+            FLAG_FLAGS.src = arr2[0].flag;
+            FLAG_FLAGS.height = 100;
+            FLAG_FLAGS.width = 240;
+            FLAGS.appendChild(FLAG_FLAGS);
+            secondWindow.style.display ="block";
+        },
+         300);
+
+         
 
 }
