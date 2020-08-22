@@ -1,0 +1,22 @@
+body{
+    background-color: darkkhaki;
+}
+.container{
+    position: absolute;
+    left: 40%;
+    top: 150px;
+    background: darkorange;
+    height: 300px;
+    width: 300px;
+}
+.container2{
+    width: 180px;
+    position: absolute;
+    left: 60px;
+    top: 60px;
+}
+
+#btn{
+    position: absolute;
+    left: 50px;
+}
