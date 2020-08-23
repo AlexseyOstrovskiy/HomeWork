@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.Arrays;
 import java.util.Optional;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -15,9 +16,9 @@ public class Main {
         Author author4 = new Author("author4", (short) 40);
         Author author5 = new Author("author5", (short) 50);
 
-        Book book1 = new Book("book1", 100);
+        Book book1 = new Book("book1", 300);
         Book book2 = new Book("book2", 200);
-        Book book3 = new Book("book3", 300);
+        Book book3 = new Book("book3", 100);
         Book book4 = new Book("book4", 400);
         Book book5 = new Book("book5", 500);
 
@@ -58,6 +59,15 @@ public class Main {
         Book max = Arrays.stream(books).max(Book::compare).get();
         System.out.println("Максимальное количество страниц в книге " + max.getTitle() + ". Количество страниц " + max.getNumberOfPages());
 
+        Arrays.stream(books)
+                .filter( (n) -> n.getAuthors().size() == 1)
+               // .forEach(System.out::println);
+                .forEach((from) -> System.out.println("Book with single authors :" + from.getTitle() + from.getAuthors()));
+
+        System.out.println("Sort the books by number of pages");
+        Arrays.stream(books)
+               .sorted()
+                .forEach(s-> System.out.println(s));
 
 
 
@@ -97,6 +107,7 @@ public class Main {
                 Arrays.stream(myArray).min().getAsInt();
 
         System.out.println("varMax = " + varMax + "  varMin = " + varMin);
+
                // stream.sorted().forEach(x -> System.out.println(x));
         System.out.println("************");
 
