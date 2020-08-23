@@ -35,4 +35,10 @@ public class Book {
     public void setAuthors(List<Author> authors) {
         this.authors = authors;
     }
+
+    public static int compare (Book book1, Book book2){
+        if(book1.getNumberOfPages() > book2.getNumberOfPages())
+            return 1;
+        return -1;
+    }
 }
