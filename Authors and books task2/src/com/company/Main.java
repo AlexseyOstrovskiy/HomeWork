@@ -1,5 +1,7 @@
 package com.company;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -76,12 +78,17 @@ public class Main {
                 .forEach(e -> System.out.println(e.getTitle()));
 
         System.out.println("Distinct of all authors");
-      /*  Arrays.stream(books)
-                .distinct(Comparator.comparing(Book::getAuthors))
-                .
+        Object[] authorList = Arrays.stream(books)
+                .map(x -> x.getAuthors())
+                .toArray();
+              // .forEach((from) -> System.out.println());
+        for (int i = 0; i <authorList.length ; i++) {
+            System.out.println(authorList[i]);
+        }
 
-                .forEach(e -> System.out.println(e.getAuthors()));
-*/
+
+       // System.out.println(authorList);
+        //System.out.println(authorList.length);
 
         //min and max number of array
         int [] myArray;
