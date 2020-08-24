@@ -1,7 +1,6 @@
 package com.company;
 
-import java.util.Arrays;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -16,11 +15,11 @@ public class Main {
         Author author4 = new Author("author4", (short) 40);
         Author author5 = new Author("author5", (short) 50);
 
-        Book book1 = new Book("book1", 300);
-        Book book2 = new Book("book2", 200);
-        Book book3 = new Book("book3", 100);
-        Book book4 = new Book("book4", 400);
-        Book book5 = new Book("book5", 500);
+        Book book1 = new Book("tBook5", 300);
+        Book book2 = new Book("tBook4", 200);
+        Book book3 = new Book("tBook3", 100);
+        Book book4 = new Book("tBook2", 400);
+        Book book5 = new Book("tBook1", 500);
 
         Author[] authors = new Author[5];
         authors[0] = author1;
@@ -64,12 +63,25 @@ public class Main {
                // .forEach(System.out::println);
                 .forEach((from) -> System.out.println("Book with single authors :" + from.getTitle() + from.getAuthors()));
 
-        System.out.println("Sort the books by number of pages");
+       System.out.println("Sort the books by number of pages");
+        Stream<Book> slist = Arrays.stream(books).sorted(Comparator.comparing(Book::getNumberOfPages));
+        slist.forEach(e -> System.out.println(e.getTitle() + " " + e.getNumberOfPages()));
+
+        System.out.println("Sort the books by title");
+        Stream<Book> slistTitle = Arrays.stream(books).sorted(Comparator.comparing(Book::getTitle));
+        slistTitle.forEach(e -> System.out.println(e.getTitle() + " " + e.getNumberOfPages()));
+
+        System.out.println("Get list of all titles");
         Arrays.stream(books)
-               .sorted()
-                .forEach(s-> System.out.println(s));
+                .forEach(e -> System.out.println(e.getTitle()));
 
+        System.out.println("Distinct of all authors");
+      /*  Arrays.stream(books)
+                .distinct(Comparator.comparing(Book::getAuthors))
+                .
 
+                .forEach(e -> System.out.println(e.getAuthors()));
+*/
 
         //min and max number of array
         int [] myArray;
