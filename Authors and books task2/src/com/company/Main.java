@@ -78,19 +78,15 @@ public class Main {
                 .forEach(e -> System.out.println(e.getTitle()));
 
         System.out.println("Distinct of all authors");
-        Object[] authorList = Arrays.stream(books)
-                .map(x -> x.getAuthors())
-                .toArray();
-              // .forEach((from) -> System.out.println());
-        for (int i = 0; i <authorList.length ; i++) {
-            System.out.println(authorList[i]);
-        }
+        Arrays.stream(books)
+                .flatMap(function -> function.getAuthors().stream())
+                .distinct()
+                .forEach((from) -> System.out.println( from.getName()));
 
 
-       // System.out.println(authorList);
-        //System.out.println(authorList.length);
+/*
 
-        //min and max number of array
+        min and max number of array
         int [] myArray;
         myArray = new int [5];
         myArray[0] = 854;
@@ -98,43 +94,43 @@ public class Main {
         myArray[2] = 54;
         myArray[3] = 3645;
         myArray[4] = 16;
-//Ьинимальное значение методом перебора
-       /* int min = myArray[0] + 1;
+Минимальное значение методом перебора
+        int min = myArray[0] + 1;
         for (int i = 0; i < myArray.length; i++) {
             if(myArray[i] < min){
                 min = myArray[i];
             }
         }
-        System.out.println("min = " + min);*/
-//Максимальное значение методом перебора
-       /* int max = myArray[0] - 1;
+        System.out.println("min = " + min);
+Максимальное значение методом перебора
+        int max = myArray[0] - 1;
         for (int i = 0; i < myArray.length; i++) {
             if(myArray[i] > max){
                 max = myArray[i];
             }
         }
         System.out.println("max = " + max);
-*/
-//Запускаем Stream
+
+Запускаем Stream
        IntStream stream =  Arrays.stream(myArray);
 
-//Максимальное значение при помощи stream
+Максимальное значение при помощи stream
               Integer varMax =
                       Arrays.stream(myArray).max().getAsInt();
-//Mинимальное значение при помощи stream
+Mинимальное значение при помощи stream
         Integer varMin =
                 Arrays.stream(myArray).min().getAsInt();
 
         System.out.println("varMax = " + varMax + "  varMin = " + varMin);
 
-               // stream.sorted().forEach(x -> System.out.println(x));
+                stream.sorted().forEach(x -> System.out.println(x));
         System.out.println("************");
 
 
-       // IntStream.of(50, 60, 70, 80, 90, 100, 110, 120).filter(x -> x < 90).map(x -> x + 10)
-        //        .limit(3).forEach(System.out::print);
+       IntStream.of(50, 60, 70, 80, 90, 100, 110, 120).filter(x -> x < 90).map(x -> x + 10)
+                .limit(3).forEach(System.out::print);
 
-
+*/
 
 
 
@@ -146,4 +142,5 @@ public class Main {
 
 
     }
+
 }
