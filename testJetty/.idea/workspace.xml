@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4132a9f1-d433-4e2a-ab71-5c7e3b3a0eba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../AlexShop/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlexShop/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlexShop/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlexShop/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlexShop/AlexShop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlexShop/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlexShop/src/main/java/com/company/Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlexShop/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlexShop/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlexShop/target/classes/com/company/Servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlexShop/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlexShop/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlexShop/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlexShop/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaRush/javaRush.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myOnlineShopWithMAven/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myOnlineShopWithMAven/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myOnlineShopWithMAven/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myOnlineShopWithMAven/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myOnlineShopWithMAven/myOnlineShopWithMAven.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myOnlineShopWithMAven/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myOnlineShopWithMAven/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myShopOnline/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myShopOnline/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myShopOnline/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myShopOnline/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myShopOnline/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myShopOnline/myShopOnline.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myShopOnline/src/main/java/com/company/servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myShopOnline/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myShopOnline/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../servlet/FirstServlet/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testJetty.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet/FirstServlet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet/FirstServlet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet/FirstServlet/target/TestDeploy.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet/FirstServlet/target/TestDeploy/WEB-INF/classes/com/company/Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet/FirstServlet/target/TestDeploy/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet/FirstServlet/target/TestDeploy/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet/FirstServlet/target/TestDeploy/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet/FirstServlet/target/TestDeploy/index2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet/FirstServlet/target/classes/com/company/Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet/FirstServlet/target/maven-archiver/pom.properties" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1iBycDcajq5chq7W3e3zD5IXHM1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4132a9f1-d433-4e2a-ab71-5c7e3b3a0eba" name="Default Changelist" comment="" />
+      <created>1601395357292</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601395357292</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1601395865082">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601395865082" />
+    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1601395865082">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601395865082" />
+    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1601395865082">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601395865082" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1601395865082">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601395865082" />
+  </component>
+</project>
