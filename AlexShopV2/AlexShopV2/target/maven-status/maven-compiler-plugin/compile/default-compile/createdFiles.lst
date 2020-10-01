@@ -1,2 +1,2 @@
-ServletOne.class
-org\example\HelloServlet.class
+com\company\HelloServletTest.class
+com\company\HelloServlet.class

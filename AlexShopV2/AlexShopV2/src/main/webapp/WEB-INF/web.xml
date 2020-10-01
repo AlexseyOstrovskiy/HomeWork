@@ -11,12 +11,19 @@
 <!--
     <servlet>
         <servlet-name>Hello</servlet-name>
-        <servlet-class>org.example.HelloServlet</servlet-class>
+        <servlet-class>com.company.HelloServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Hello</servlet-name>
         <url-pattern>/hello/*</url-pattern>
     </servlet-mapping>
 -->
-
+<servlet>
+    <servlet-name>HelloServletTest</servlet-name>
+    <servlet-class>com.company.HelloServletTest</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServletTest</servlet-name>
+        <url-pattern>/helloservlet</url-pattern>
+    </servlet-mapping>
 </web-app>

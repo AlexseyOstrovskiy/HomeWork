@@ -9,10 +9,11 @@
     <h1 >
         Welcome to online AlexShop!
     </h1>
+    <form action="page2.jsp">
     <input name= "name" type="text" placeholder="Enter your name!">
     <br>
     <br>
     <button>Enter</button>
-
+     </form>
 </body>
 </html>
