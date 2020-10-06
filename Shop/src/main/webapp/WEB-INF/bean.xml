@@ -38,9 +38,6 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
 
 
-    //bueldang - spring-web-contex
-    раздел 2.5
-    добавить зависимость spring web
 
 
 </beans>
