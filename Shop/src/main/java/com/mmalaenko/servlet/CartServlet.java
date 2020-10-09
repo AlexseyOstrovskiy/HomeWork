@@ -11,11 +11,9 @@ import com.mmalaenko.service.OrderGoodService;
 import com.mmalaenko.service.OrderService;
 import com.mmalaenko.service.ProductService;
 import com.mmalaenko.service.UserService;
-import com.mmalaenko.service.impl.OrderGoodServiceImpl;
-import com.mmalaenko.service.impl.OrderServiceImpl;
-import com.mmalaenko.service.impl.ProductServiceImpl;
-import com.mmalaenko.service.impl.UserServiceImpl;
+import com.mmalaenko.service.impl.*;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -40,10 +38,14 @@ public class CartServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        userService = new UserServiceImpl(new UserRepositoryImpl());
-        //productService= new ProductServiceImpl(new ProductRepositoryImpl());
-        orderService = new OrderServiceImpl(new OrderRepositoryImpl());
-        orderGoodService = new OrderGoodServiceImpl(new OrderGoodRepositoryImpl());
+//        userService = new UserServiceImpl(new UserRepositoryImpl());
+//        //productService= new ProductServiceImpl(new ProductRepositoryImpl());
+//        orderService = new OrderServiceImpl(new OrderRepositoryImpl());
+//        orderGoodService = new OrderGoodServiceImpl(new OrderGoodRepositoryImpl());
+        AnnotationConfigApplicationContext context = SpringContex.getApplicationComtext();
+        this.orderGoodService = (OrderGoodService) context.getBean("orderGoodService");
+        this.orderService = (OrderService) context.getBean("orderServisce");
+        this.userService = (UserService) context.getBean("UserService");
     }
 
     @Override
