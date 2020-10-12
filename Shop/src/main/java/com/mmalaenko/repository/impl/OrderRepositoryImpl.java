@@ -4,12 +4,16 @@ import com.mmalaenko.model.Order;
 import com.mmalaenko.repository.OrderRepository;
 import com.mmalaenko.utill.DBConnector;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
+@Repository
+
 public class OrderRepositoryImpl implements OrderRepository {
 
     private static final String SQL_SELECT_BY_USER_ID = "SELECT*FROM orders WHERE userID=?";
@@ -29,7 +33,7 @@ public class OrderRepositoryImpl implements OrderRepository {
 //        }
 //        return order;
 //    }
-
+@Autowired
     @Override
     public void saveOrder(Order order) {
         try (Connection connection = DBConnector.getConnection();
@@ -44,7 +48,7 @@ public class OrderRepositoryImpl implements OrderRepository {
         }
 
     }
-
+    @Autowired
     @Override
     public List<Order> getListOrderByUser(int userID) {
         List<Order> orders= new ArrayList<>();

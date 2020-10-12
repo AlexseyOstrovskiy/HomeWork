@@ -6,12 +6,15 @@ import com.mmalaenko.utill.DBConnector;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 @Slf4j
+@Repository
 public class UserRepositoryImpl implements UserRepository {
 
     private static final String SQL_SELECT_BY_LOGIN = "SELECT*FROM users WHERE  login=?";
@@ -19,6 +22,7 @@ public class UserRepositoryImpl implements UserRepository {
     private static final String SQL_INSERT_USER = "INSERT INTO users(login,password) VALUES(?,?)";
 
     @Override
+    @Autowired
     public Optional<User> getUserByLogin(String login) {
         User user=null;
         try(Connection connection = DBConnector.getConnection()) {
@@ -33,6 +37,7 @@ public class UserRepositoryImpl implements UserRepository {
         return Optional.ofNullable(user);
     }
 
+    @Autowired
     @Override
     public List<User> getAll() {
         try(Connection connection = DBConnector.getConnection()) {
@@ -45,7 +50,7 @@ public class UserRepositoryImpl implements UserRepository {
         }
         return  null;
     }
-
+    @Autowired
     @Override
     public void save(User user) {
         try(Connection connection=DBConnector.getConnection()){

@@ -5,6 +5,8 @@ import com.mmalaenko.model.User;
 import com.mmalaenko.repository.ProductRepository;
 import com.mmalaenko.utill.DBConnector;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -12,12 +14,14 @@ import java.util.List;
 import java.util.Optional;
 
 @Slf4j
+@Repository
 public class ProductRepositoryImpl implements ProductRepository {
 
     private static final String SQL_SELECT_ALL_PRODUCTS = "SELECT*FROM products";
     private static final String SQL_SELECT_BY_NAME="SELECT*FROM products WHERE name=?";
 
     @Override
+    @Autowired
     public List<Product> getAll() {
         List<Product> products = new ArrayList<>();
         try (Connection connection = DBConnector.getConnection()) {
@@ -32,6 +36,8 @@ public class ProductRepositoryImpl implements ProductRepository {
     }
 
     @Override
+    @Autowired
+
     public Product getProductByName(String productName) {
         Product product=null;
         try(Connection connection = DBConnector.getConnection()) {

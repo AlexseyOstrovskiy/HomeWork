@@ -4,6 +4,7 @@ com\mmalaenko\service\OrderService.class
 com\mmalaenko\service\impl\OrderGoodServiceImpl.class
 com\mmalaenko\utill\DBConnector.class
 com\mmalaenko\repository\impl\OrderGoodRepositoryImpl.class
+com\mmalaenko\service\impl\SpringContex.class
 com\mmalaenko\service\UserService.class
 com\mmalaenko\model\OrderGood.class
 com\mmalaenko\service\ProductService.class
@@ -26,4 +27,5 @@ com\mmalaenko\repository\OrderRepository.class
 com\mmalaenko\repository\impl\ProductRepositoryImpl.class
 com\mmalaenko\repository\UserRepository.class
 com\mmalaenko\service\impl\ProductServiceImpl.class
+com\mmalaenko\utill\AppConfig.class
 com\mmalaenko\model\Order.class
