@@ -19,13 +19,13 @@
           class="org.Alex.RapMusic"/>
 
 
+
     <bean id="musicPlayer"
           class="org.Alex.MusicPlayer">
-        <property name="music" ref="musicBeanClassic"/>
-        <property name="music" ref="musicBeanRock"/>
-        <property name="music" ref="musicBeanRap"/>
-<!--        <property name="name" value="Some name MusicPlayer"/>-->
-<!--        <property name="volume" value="50"/>-->
+<!--        <property name="music" ref="musicBeanClassic"/>-->
+<!--        <property name="music" ref="musicBeanRock"/>-->
+<!--        <property name="music" ref="musicBeanRap"/>-->
+
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
 
