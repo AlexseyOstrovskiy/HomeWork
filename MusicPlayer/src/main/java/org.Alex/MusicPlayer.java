@@ -9,13 +9,6 @@ public class MusicPlayer {
     private String name;
     private int volume;
     private Music music;
-
-//    private List<Music>musics;
-//    public  MusicPlayer(List<Music>musics){
-//    this.musics= musics;
-//    }
-//
-
     private List<Music>musicList = new ArrayList<>();
 
     public List<Music> getMusicList() {
@@ -55,35 +48,25 @@ public class MusicPlayer {
     }
 
     public void playMusic(){
+
+        //task for homework
 //        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-//           "applicationContext.xml"
-//   );
-//        musicList.add(context.getBean("musicBeanRock", RockMusic.class));
-//        musicList.add(context.getBean("musicBeanClassic", ClassicalMusic.class));
-//        musicList.add(context.getBean("musicBeanRap", RapMusic.class));
+//                "applicationContext.xml"
+//        );
+//            ClassicalMusic classicalMusic = context.getBean("musicBeanClassic", ClassicalMusic.class);
+//            RapMusic rapMusic = context.getBean("musicBeanRap", RapMusic.class);
+//            RockMusic rockMusic = context.getBean("musicBeanRock", RockMusic.class);
+//            musicList.add( classicalMusic);
+//            musicList.add(rockMusic);
+//            musicList.add(rapMusic);
 //
 //        for (int i = 0; i <musicList.size() ; i++) {
-//        System.out.println("Now play " +musicList.get(i).getSong());
+//            System.out.println(musicList.get(i).getSong());
 //        }
-//
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-                "applicationContext.xml"
-        );
-            ClassicalMusic classicalMusic = context.getBean("musicBeanClassic", ClassicalMusic.class);
-            RapMusic rapMusic = context.getBean("musicBeanRap", RapMusic.class);
-            RockMusic rockMusic = context.getBean("musicBeanRock", RockMusic.class);
-            musicList.add( classicalMusic);
-            musicList.add(rockMusic);
-            musicList.add(rapMusic);
+//        System.out.println("Volume " + getVolume());
+//        System.out.println("Name this player " + getName());
 
-        for (int i = 0; i <musicList.size() ; i++) {
-            System.out.println(musicList.get(i).getSong());
-        }
-        System.out.println("Volume " + getVolume());
-        System.out.println("Name this player " + getName());
-       //System.out.println(musicList.size());
-
-//        System.out.println(music.getSong());
+        System.out.println(music.getSong());
 
     }
 }

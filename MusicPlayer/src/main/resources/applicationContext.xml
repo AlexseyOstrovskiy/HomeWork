@@ -19,16 +19,20 @@
           class="org.Alex.RapMusic"/>
 
 
+<!--task for homework-->
+<!--    <bean id="musicPlayer"-->
+<!--          class="org.Alex.MusicPlayer">-->
+<!--        <property name="name" value="${musicPlayer.name}"/>-->
+<!--        <property name="volume" value="${musicPlayer.volume}"/>-->
+<!--    </bean>-->
 
-    <bean id="musicPlayer"
-          class="org.Alex.MusicPlayer">
-<!--        <property name="music" ref="musicBeanClassic"/>-->
-<!--        <property name="music" ref="musicBeanRock"/>-->
-<!--        <property name="music" ref="musicBeanRap"/>-->
-
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="volume" value="${musicPlayer.volume}"/>
-
-    </bean>
+        <bean id="musicPlayer"
+              class="org.Alex.MusicPlayer"
+              scope="prototype"
+        >
+            <property name="music" ref="musicBeanRock"/>
+            <property name="name" value="${musicPlayer.name}"/>
+            <property name="volume" value="${musicPlayer.volume}"/>
+        </bean>
 
 </beans>
