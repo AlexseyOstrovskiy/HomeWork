@@ -33,7 +33,7 @@ public class OrderRepositoryImpl implements OrderRepository {
 //        }
 //        return order;
 //    }
-@Autowired
+//@Autowired
     @Override
     public void saveOrder(Order order) {
         try (Connection connection = DBConnector.getConnection();
@@ -48,7 +48,7 @@ public class OrderRepositoryImpl implements OrderRepository {
         }
 
     }
-    @Autowired
+ //   @Autowired
     @Override
     public List<Order> getListOrderByUser(int userID) {
         List<Order> orders= new ArrayList<>();

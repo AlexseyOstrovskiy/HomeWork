@@ -21,7 +21,7 @@ public class ProductRepositoryImpl implements ProductRepository {
     private static final String SQL_SELECT_BY_NAME="SELECT*FROM products WHERE name=?";
 
     @Override
-    @Autowired
+  //  @Autowired
     public List<Product> getAll() {
         List<Product> products = new ArrayList<>();
         try (Connection connection = DBConnector.getConnection()) {
@@ -36,7 +36,7 @@ public class ProductRepositoryImpl implements ProductRepository {
     }
 
     @Override
-    @Autowired
+   // @Autowired
 
     public Product getProductByName(String productName) {
         Product product=null;

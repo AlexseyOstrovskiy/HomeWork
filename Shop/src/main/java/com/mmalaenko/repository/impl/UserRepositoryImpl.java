@@ -22,7 +22,7 @@ public class UserRepositoryImpl implements UserRepository {
     private static final String SQL_INSERT_USER = "INSERT INTO users(login,password) VALUES(?,?)";
 
     @Override
-    @Autowired
+   // @Autowired
     public Optional<User> getUserByLogin(String login) {
         User user=null;
         try(Connection connection = DBConnector.getConnection()) {
@@ -37,7 +37,7 @@ public class UserRepositoryImpl implements UserRepository {
         return Optional.ofNullable(user);
     }
 
-    @Autowired
+  //  @Autowired
     @Override
     public List<User> getAll() {
         try(Connection connection = DBConnector.getConnection()) {
@@ -50,7 +50,7 @@ public class UserRepositoryImpl implements UserRepository {
         }
         return  null;
     }
-    @Autowired
+   // @Autowired
     @Override
     public void save(User user) {
         try(Connection connection=DBConnector.getConnection()){
