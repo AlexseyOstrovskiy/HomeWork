@@ -9,14 +9,18 @@
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
 
     <bean id="musicBeanRock"
-          class="org.Alex.RockMusic">
+            class="org.Alex.RockMusic"
+            init-method="someInit"
+            destroy-method="someDestroy"
+            factory-method="getRockMusic">
     </bean>
 
-    <bean id="musicBeanClassic"
-          class="org.Alex.ClassicalMusic"/>
+    <!--    Example init and destroy method in beans-->
+<!--    <bean id="musicBeanClassic"-->
+<!--          class="org.Alex.ClassicalMusic"/>-->
 
-    <bean id="musicBeanRap"
-          class="org.Alex.RapMusic"/>
+<!--    <bean id="musicBeanRap"-->
+<!--          class="org.Alex.RapMusic"/>-->
 
 
 <!--task for homework-->
@@ -26,13 +30,15 @@
 <!--        <property name="volume" value="${musicPlayer.volume}"/>-->
 <!--    </bean>-->
 
-        <bean id="musicPlayer"
-              class="org.Alex.MusicPlayer"
-              scope="prototype"
-        >
-            <property name="music" ref="musicBeanRock"/>
-            <property name="name" value="${musicPlayer.name}"/>
-            <property name="volume" value="${musicPlayer.volume}"/>
-        </bean>
+<!--    Example init and destroy method in beans-->
+
+<!--        <bean id="musicPlayer"-->
+<!--              class="org.Alex.MusicPlayer"-->
+<!--              scope="prototype"-->
+<!--        >-->
+<!--            <property name="music" ref="musicBeanRock"/>-->
+<!--            <property name="name" value="${musicPlayer.name}"/>-->
+<!--            <property name="volume" value="${musicPlayer.volume}"/>-->
+<!--        </bean>-->
 
 </beans>

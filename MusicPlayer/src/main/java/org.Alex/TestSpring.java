@@ -9,18 +9,22 @@ public class TestSpring {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 "applicationContext.xml"
         );
+        RockMusic rockMusic = context.getBean("musicBeanRock", RockMusic.class );
+        System.out.println(rockMusic.getSong());
 
 
+//<!--    Example init and destroy method in beans-->
 
-        MusicPlayer firstMusicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
-        MusicPlayer secondMusicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
-        boolean bool = firstMusicPlayer==secondMusicPlayer;
-        System.out.println(bool);
-        System.out.println(firstMusicPlayer);
-        System.out.println(secondMusicPlayer);
-        firstMusicPlayer.setVolume(10);
-        System.out.println(firstMusicPlayer.getVolume());
-        System.out.println(secondMusicPlayer.getVolume());
+//        MusicPlayer firstMusicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+//        MusicPlayer secondMusicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+//        boolean bool = firstMusicPlayer==secondMusicPlayer;
+//        System.out.println(bool);
+//        System.out.println(firstMusicPlayer);
+//        System.out.println(secondMusicPlayer);
+//        firstMusicPlayer.setVolume(10);
+//        System.out.println(firstMusicPlayer.getVolume());
+//        System.out.println(secondMusicPlayer.getVolume());
+
         //task for homework
        //musicPlayer.playMusic();
        context.close();
