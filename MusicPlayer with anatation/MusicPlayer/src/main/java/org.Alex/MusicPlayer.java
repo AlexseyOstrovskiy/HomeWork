@@ -1,73 +1,39 @@
 package org.Alex;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class MusicPlayer {
+    private Music music1;
+    private  Music music2;
+    @Value("${musicPlayer.name1}")
     private String name;
+    @Value("${musicPlayer.volume1}")
     private int volume;
-    private Music music;
-    private List<Music>musicList = new ArrayList<>();
 
-    public List<Music> getMusicList() {
-        return musicList;
-    }
-
-    public void setMusicList(List<Music> musicList) {
-        this.musicList = musicList;
-    }
-
-
-
-
-    public int getVolume() {
-        return volume;
-    }
-
-    public void setVolume(int volume) {
-        this.volume = volume;
-    }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public int getVolume() {
+        return volume;
     }
 
-    public MusicPlayer(Music music) {
-        this.music = music;
-    }
-    public  MusicPlayer(){}
 
-    public void setMusic(Music music) {
-        this.music = music;
+    public MusicPlayer(@Qualifier("rockMusic") Music music1,@Qualifier("classicalMusic") Music music2) {
+        this.music1 = music1;
+        this.music2 = music2;
     }
 
-    public void playMusic(){
-
-        //task for homework
-//        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-//                "applicationContext.xml"
-//        );
-//            ClassicalMusic classicalMusic = context.getBean("musicBeanClassic", ClassicalMusic.class);
-//            RapMusic rapMusic = context.getBean("musicBeanRap", RapMusic.class);
-//            RockMusic rockMusic = context.getBean("musicBeanRock", RockMusic.class);
-//            musicList.add( classicalMusic);
-//            musicList.add(rockMusic);
-//            musicList.add(rapMusic);
-//
-//        for (int i = 0; i <musicList.size() ; i++) {
-//            System.out.println(musicList.get(i).getSong());
-//        }
-//        System.out.println("Volume " + getVolume());
-//        System.out.println("Name this player " + getName());
-
-        System.out.println(music.getSong());
-
+    public String playMusic(){
+       return
+        music1.getSong()+ " , " + music2.getSong();
     }
 }

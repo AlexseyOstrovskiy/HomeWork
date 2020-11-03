@@ -12,6 +12,10 @@ public class OrderGoodServiceImpl implements OrderGoodService {
     @Autowired
     private final OrderGoodRepository orderGoodRepository;
 
+    public OrderGoodServiceImpl(OrderGoodRepository orderGoodRepository) {
+        this.orderGoodRepository = orderGoodRepository;
+    }
+
     @Override
     public void save(int orderID, int productID) {
         orderGoodRepository.save(orderID,productID);

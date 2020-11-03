@@ -2,21 +2,30 @@
 package org.Alex;
 
 import com.sun.deploy.net.MessageHeader;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestSpring {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-                "applicationContext.xml"
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(
+                SpringConfig.class
         );
-        RockMusic rockMusic = context.getBean("musicBeanRock", RockMusic.class );
-        MusicPlayer musicPlayer = new MusicPlayer(rockMusic);
-       musicPlayer.playMusic();
-       
-       Music classicalMusic = context.getBean("classicalMusic", ClassicalMusic.class);
-       MusicPlayer classicalMusicPlayer = new MusicPlayer(classicalMusic);
-       classicalMusicPlayer.playMusic();
-       context.close();
+        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        System.out.println(musicPlayer.getName());
+        System.out.println(musicPlayer.getVolume());
+//        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+//        musicPlayer.playMusic();
+//        Computer computer = context.getBean("computer", Computer.class);
+//        System.out.println(computer);
+//        RockMusic rockMusic = context.getBean("musicBeanRock", RockMusic.class );
+//        MusicPlayer musicPlayer = new MusicPlayer(rockMusic);
+//       musicPlayer.playMusic();
+//
+//       Music classicalMusic = context.getBean("classicalMusic", ClassicalMusic.class);
+//
+//       MusicPlayer classicalMusicPlayer = new MusicPlayer(classicalMusic);
+//       classicalMusicPlayer.playMusic();
+//       context.close();
 
 
 

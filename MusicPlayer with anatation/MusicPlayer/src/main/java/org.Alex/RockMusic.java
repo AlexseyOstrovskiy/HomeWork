@@ -2,9 +2,9 @@ package org.Alex;
 
 import org.springframework.stereotype.Component;
 
-@Component("musicBeanRock")
+
 public class RockMusic implements Music {
-    private RockMusic() {
+    public RockMusic() {
     }
     public static RockMusic getRockMusic(){
         return new RockMusic();
