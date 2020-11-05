@@ -7,12 +7,12 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:property-placeholder location="file:app.properties"
-                                  ignore-resource-not-found="true"/>
+    />
 
     <context:component-scan base-package="ru.kutepov"/>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/index/"/>
+        <property name="prefix" value="/WEB-INF/pages/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
 
