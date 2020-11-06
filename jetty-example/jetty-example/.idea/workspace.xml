@@ -2,177 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8cd6e8b-eb94-4b52-97b3-1f0714cf9c9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/jetty-example.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/src/main/java/ostrovskiy/controller/MainComtroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/src/main/java/ostrovskiy/controller/launcher/Launcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/src/main/webapp/resources/properties/app.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/app.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/classes/WEB-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/classes/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/classes/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/classes/ostrovskiy/controller/MainComtroller.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/classes/ostrovskiy/controller/launcher/Launcher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/classes/resources/properties/app.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/classes/WEB-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/classes/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/classes/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/classes/ostrovskiy/controller/MainComtroller.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/classes/ostrovskiy/controller/launcher/Launcher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/classes/resources/properties/app.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/javax.el-3.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/javax.servlet.jsp-2.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/javax.servlet.jsp-api-2.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/jetty-http-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/jetty-io-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/jetty-jsp-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/jetty-schemas-3.1.M0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/jetty-security-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/jetty-server-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/jetty-servlet-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/jetty-util-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/jetty-webapp-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/jetty-xml-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/org.eclipse.jdt.core-3.8.2.v20130121.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/spring-aop-4.3.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/spring-beans-4.3.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/spring-context-4.3.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/spring-core-4.3.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/spring-expression-4.3.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/spring-web-4.3.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/lib/spring-webmvc-4.3.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/jetty-example/resources/properties/app.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/javax.el-3.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/javax.servlet.jsp-2.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/javax.servlet.jsp-api-2.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/javax.servlet.jsp.jstl-1.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/jetty-http-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/jetty-io-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/jetty-jsp-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/jetty-schemas-3.1.M0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/jetty-security-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/jetty-server-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/jetty-servlet-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/jetty-util-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/jetty-webapp-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/jetty-xml-9.2.19.v20160908.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/org.eclipse.jdt.core-3.8.2.v20130121.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/spring-aop-4.3.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/spring-beans-4.3.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/spring-context-4.3.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/spring-core-4.3.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/spring-expression-4.3.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/spring-web-4.3.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/lib/spring-webmvc-4.3.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HelpDeskByAlexO/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/.idea/MusicPlayer with anatation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/src/main/java/org.Alex/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/src/main/java/org.Alex/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/src/main/resources/musicPlayer1.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/target/classes/musicPlayer1.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/target/classes/org/Alex/Computer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/target/classes/org/Alex/SpringConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/TrainingHibernateShop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/src/main/java/Entity/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/src/main/java/Entity/Cable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/src/main/java/Entity/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/src/main/java/Entity/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/src/main/java/Entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/src/main/java/Entity/Notebook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/src/main/java/Entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TrainingHibernateShop/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mvsSpringTraining/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mvsSpringTraining/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mvsSpringTraining/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mvsSpringTraining/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mvsSpringTraining/mvsSpringTraining.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mvsSpringTraining/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mvsSpringTraining/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mvsSpringTraining/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/src/main/java/org.Alex/ClassicalMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/src/main/java/org.Alex/ClassicalMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/src/main/java/org.Alex/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/src/main/java/org.Alex/MusicPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/src/main/java/org.Alex/RapMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/src/main/java/org.Alex/RapMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/src/main/java/org.Alex/RockMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/src/main/java/org.Alex/RockMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/src/main/java/org.Alex/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/src/main/java/org.Alex/TestSpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/src/main/resources/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/target/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/target/classes/org/Alex/ClassicalMusic.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/target/classes/org/Alex/ClassicalMusic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/target/classes/org/Alex/MusicPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/target/classes/org/Alex/MusicPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/target/classes/org/Alex/RapMusic.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/target/classes/org/Alex/RapMusic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/target/classes/org/Alex/RockMusic.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/target/classes/org/Alex/RockMusic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/target/classes/org/Alex/TestSpring.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MusicPlayer with anatation/MusicPlayer/target/classes/org/Alex/TestSpring.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Shop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/src/main/java/com/mmalaenko/service/impl/OrderGoodServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Shop/src/main/java/com/mmalaenko/service/impl/OrderGoodServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/model/Order$OrderBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/model/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/model/OrderGood$OrderGoodBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/model/OrderGood.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/model/Product$ProductBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/model/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/model/User$UserBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/repository/OrderGoodRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/repository/OrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/repository/ProductRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/repository/impl/OrderGoodRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/repository/impl/OrderRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/repository/impl/ProductRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/repository/impl/UserRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/security/LoginFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/service/OrderGoodService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/service/OrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/service/ProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/service/impl/OrderGoodServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/service/impl/OrderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/service/impl/ProductServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/service/impl/SpringContex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/servlet/CartServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/servlet/ShopServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/utill/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/utill/DBConnector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/classes/com/mmalaenko/utill/DataBaseInitialize.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Shop/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Shop/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jettyTest/mavenJettyTest/mavenJettyTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop 20.10.2020/Shop 20.10.2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop 20.10.2020/Shop 20.10.2020/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop 20.10.2020/Shop 20.10.2020/Shop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop 20.10.2020/Shop 20.10.2020/Shop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop 20.10.2020/Shop 20.10.2020/Shop/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop 20.10.2020/Shop 20.10.2020/Shop/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop 20.10.2020/Shop 20.10.2020/Shop/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop 20.10.2020/Shop 20.10.2020/Shop/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,8 +26,81 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="jetty-example Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="jetty-example Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="jetty-example Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="jetty" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
   <component name="ProjectId" id="1jmppSVwH18JcrdHQZ5Ru6tMKUD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="jetty-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jetty-example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jetty-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jetty-example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jetty-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jetty-example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jetty-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jetty-example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jetty-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jetty-example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -197,7 +108,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -223,6 +147,36 @@
       <updated>1604419304702</updated>
     </task>
     <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="WindowStateProjectService">
     <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1604419688047">
