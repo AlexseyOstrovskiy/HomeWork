@@ -8,11 +8,21 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
   <display-name>Archetype Created Web Application</display-name>
-  <welcome-file-list>
-    <welcome-file>/WEB-INF/index.jsp</welcome-file>
-  </welcome-file-list>
-  <error-page>
-    <error-code>404</error-code>
-    <location>/WEB-INF/error-page.jsp</location>
-  </error-page>
+<!--  <welcome-file-list>-->
+<!--    <welcome-file>/WEB-INF/index.jsp</welcome-file>-->
+<!--  </welcome-file-list>-->
+<!--  <error-page>-->
+<!--    <error-code>404</error-code>-->
+<!--    <location>/WEB-INF/error-page.jsp</location>-->
+<!--  </error-page>-->
+
+  <servlet>
+    <servlet-name>mainServlet</servlet-name>
+    <servlet-class>com.Osrovskij.servlet.MainServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>mainServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
 </web-app>
