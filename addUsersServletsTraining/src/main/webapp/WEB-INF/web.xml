@@ -2,6 +2,52 @@
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
-<web-app>
+<web-app version="4"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
   <display-name>Archetype Created Web Application</display-name>
+
+<!--    <welcome-file-list>-->
+<!--      <welcome-file>webapp/index.html</welcome-file>-->
+<!--    </welcome-file-list>-->
+<!--    <error-page>-->
+<!--      <error-code>404</error-code>-->
+<!--      <location>/WEB-INF/error-page.jsp</location>-->
+<!--    </error-page>-->
+
+<!--<servlet>-->
+<!--  <servlet-name>welcome</servlet-name>-->
+<!--  <servlet-class>java.app.servlets.WelcomeServlet</servlet-class>-->
+<!--</servlet>-->
+
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>welcome</servlet-name>-->
+<!--    <url-pattern>/</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+  <servlet>
+    <servlet-name>add</servlet-name>
+    <servlet-class>app.servlets.AddServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>add</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+
+
+<servlet>
+  <servlet-name>list</servlet-name>
+  <servlet-class>app.servlets.ListServlet</servlet-class>
+</servlet>
+
+  <servlet-mapping>
+    <servlet-name>list</servlet-name>
+    <url-pattern>/list</url-pattern>
+  </servlet-mapping>
+
+
 </web-app>
+
+

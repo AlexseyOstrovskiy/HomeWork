@@ -1,0 +1,3 @@
+app\servlets\AddServlet.class
+app\servlets\ListServlet.class
+app\servlets\WelcomeServlet.class
